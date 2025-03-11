@@ -1,0 +1,104 @@
+a {
+    text-decoration: none;
+}
+
+.btn__simple {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 16px;
+    background-color: $clr_white;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 0 $clr_shadow;
+    transition: all ease-in .16s;
+
+    p {
+        display: inline-block;
+        color: $clr_black;
+    }
+
+    &:hover {
+        box-shadow: none;
+        top: 6px;
+        left: 6px;
+        box-shadow: inset 4px 4px 0 0 $clr_shadow;
+    }
+}
+
+.btn__arrow  {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 16px;
+    background-color: $clr_white;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 0 $clr_shadow;
+    transition: all ease-in .16s;
+    color: $clr_black;
+
+    p {
+        display: inline-block;
+        color: $clr_black;
+        margin: 0;
+        font-weight: $font_bold;
+    }
+
+    &::after {
+        font-family: "icons";
+        content: "\f105";
+        margin-left: 4px;
+    }
+
+    &:hover {
+        box-shadow: none;
+        top: 6px;
+        left: 6px;
+        box-shadow: inset 4px 4px 0 0 $clr_shadow;
+    }
+}
+
+.btn__black {
+    background-color: $clr_black;
+    color: $clr_white;
+    
+    p {
+        color: $clr_white;
+    }
+}
+
+.btn__green {
+    background-color: $popel_main;
+    color: $clr_black;
+
+    p {
+        color: $clr_black;
+    }
+}
+
+.btn__pink {
+    background-color: $blushing_main;
+    color: $clr_black;
+
+    p {
+        color: $clr_white;
+    }
+}
+
+.btn__blue {
+    background-color: $salty_main;
+    color: $clr_black;
+
+    p {
+        color: $clr_white;
+    }
+}
+
+.btn__yellow {
+    background-color: $teeth_main;
+    color: $clr_black;
+
+    p {
+        color: $clr_black;
+    }
+}
+

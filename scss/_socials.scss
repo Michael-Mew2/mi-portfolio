@@ -1,0 +1,56 @@
+@mixin color_social_buttons($clr_bg:$clr_black, $clr_ic:$clr_white) {
+    .btn__social {
+        background-color: $clr_bg;
+
+        i {
+            color: $clr_ic;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+
+    .btn__social {
+        padding: 10px;
+        height: 40px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 3px 3px 0 0 $clr_shadow;
+        margin-left: 10px;
+
+        transition: all ease-in .16s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            box-shadow: none;
+            top: 6px;
+            left: 6px;
+            box-shadow: inset 4px 4px 0 0 $clr_shadow;
+        }
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+    }
+
+    .btn__social__backbone {
+        i {
+            rotate: -45deg;
+        }
+    }
+
+}
+
+.socials__dark {
+    @include color_social_buttons($clr_black, $clr_white)
+}
+
+.socials__clear {
+    @include color_social_buttons($clr_white, $clr_black)
+}

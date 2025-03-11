@@ -1,0 +1,116 @@
+.form__style {
+    max-width: 60rem;
+    max-height: 100%;
+    margin: auto;
+    padding: $st-padding-web;
+    border-radius: $border-radius;
+    box-shadow: 6px 6px 0 0 $clr_shadow;
+    rotate: 1.5deg;
+    background-color: $clr_white;
+    
+    @media screen and (max-width:$bp-ms) {
+        width: 90vw;
+        rotate: 1deg;
+    }
+
+    @media screen and (max-width:$bp-sm) {
+        width: 90vw;
+        rotate: 0.3deg;
+    }
+
+    form {
+        font-family: $basic;
+
+        > fieldset {
+            border: none;
+            margin-bottom: $lg-padding-web;
+
+            label {
+                font-weight: $font_bold;
+            }
+
+            input {
+                width: 100%;
+                margin-bottom: 15px;
+                margin-top: 8px;
+                height: fit-content;
+                padding: 15px;
+                border-radius: $border-radius;
+                outline: 3px solid $salty_main;
+                border: none;
+
+            }
+
+            .r-pill {
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            textarea {
+                width: 100%;
+                border-radius: $border-radius;
+                padding: 15px;
+                rotate: -1.5deg;
+                border: none;
+                outline: 3px solid $salty_main;
+
+                @media screen and (max-width:$bp-sm) {
+                    rotate: -0.3deg;
+                }
+
+            }
+
+        }
+
+        input[type="submit"] {
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px 16px;
+            background-color: $clr_white;
+            border-radius: 12px;
+            box-shadow: 6px 6px 0 0 $clr_shadow;
+            transition: all ease-in .16s;
+            border: none;
+            background-color: $salty_main;
+            color: $clr_white;
+            cursor: pointer;
+            font-weight: $font_bold;
+        
+            &:hover {
+                box-shadow: none;
+                top: 6px;
+                left: 6px;
+                box-shadow: inset 4px 4px 0 0 $clr_shadow;
+            }
+        }
+
+    }
+}
+
+/* Hide the default radio buttons */
+input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+   }
+   
+/* Style the labels to look like pills */
+.r-pill__item label {
+display: inline-block;
+padding: 10px 20px;
+margin: 5px;
+border-radius: 25px;
+background-color: $clr_white;
+border: 4px solid $salty_main;
+box-shadow: 6px 6px 0 0 $clr_shadow;
+cursor: pointer;
+}
+
+/* Highlight the selected pill */
+input[type="radio"]:checked + label {
+background-color: $salty_main;
+box-shadow: inset 6px 6px 0 0 $clr_shadow;
+border: none;
+color: $clr_white;
+}
