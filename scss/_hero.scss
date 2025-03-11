@@ -1,0 +1,116 @@
+@mixin color_hero_decoration ($bg_color:$blushing_shine){
+    .hero__decoration__bottom {
+        background-color: $bg_color;
+    }
+}
+
+// Hero basis
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    padding: 1.5rem;
+    
+    
+    .hero__major__content {
+        margin: 6vw auto;
+        max-width: 80rem;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__secondary__content {
+        margin: 0 auto;
+        max-width: 80rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .headline__shadow__out {
+            margin: 0;
+        }
+
+
+    }
+    
+    .hero__decoration__bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 6vw;
+        width: 100%;
+        // background-color: $blushing_shine;
+        clip-path: polygon(6vw 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 1;
+    }
+}
+
+// Hero custom
+
+.hero__index {
+    background: rgb(127,127,213);
+    background: linear-gradient(354deg, rgba(127,127,213,1) 0%, rgba(134,168,231,1) 50%, rgba(145,234,228,1) 100%);
+    color: $clr_white;
+    @include color_hero_decoration($blushing_shine)
+}
+
+.hero__offset {
+    display: flex;
+    align-items: flex-end;
+
+
+    @media screen and (max-width: $bp-ms) {
+        padding-bottom: 0;
+        overflow-y: hidden;
+
+        .hero__secondary__content {
+            .headline__shadow__out {
+                margin-bottom: -0.8rem;
+                // outline: 4px solid blue;
+            }
+        }
+
+    }
+
+    @media screen and (max-width:$bp-sm) {
+        padding-bottom: 0;
+
+        .hero__secondary__content {
+            .headline__shadow__out {
+                margin-bottom: -0.8rem;
+                // outline: 4px solid green;
+            }
+        }
+    }
+}
+
+.hero__about {
+    background: rgb(253,200,48);
+    background: linear-gradient(180deg, rgba(253,200,48,1) 0%, rgba(243,115,53,1) 100%);
+    color: $clr_black;
+    @include color_hero_decoration($teeth_shine);
+}
+
+.hero__skills {
+    background: rgb(29,151,108);
+    background: linear-gradient(0deg, rgba(29,151,108,1) 0%, rgba(147,249,185,1) 100%);
+    color: $clr_black;
+    @include color_hero_decoration($popel_shine)
+}
+
+.hero__projects {
+    background: rgb(249,83,198);
+    background: linear-gradient(180deg, rgba(249,83,198,1) 0%, rgba(185,29,115,1) 100%);
+    color: $clr_white;
+    @include color_hero_decoration($blushing_shine)
+}
+
+.hero__contact {
+    background: rgb(0,180,219);
+    background: linear-gradient(180deg, rgba(0,180,219,1) 0%, rgba(0,131,176,1) 100%);
+    color: $clr_white;
+    @include color_hero_decoration($salty_shine)
+}
