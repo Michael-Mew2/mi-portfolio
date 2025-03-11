@@ -935,6 +935,11 @@ header nav #menu__toggle {
   margin: 0;
   text-align: start;
 }
+.stations__flex .stations__content .stations__textside .btn__group {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
 .stations__flex .stations__content .stations__pictureside {
   width: 50%;
   aspect-ratio: 1/1;
@@ -969,6 +974,9 @@ header nav #menu__toggle {
   .stations__flex .stations__content .stations__textside {
     width: 100%;
   }
+  .stations__flex .stations__content .stations__textside .btn__group {
+    flex-direction: column;
+  }
   .stations__flex .stations__content .stations__pictureside {
     width: 100%;
     height: 0px;
@@ -998,7 +1006,7 @@ header nav #menu__toggle {
     rotate: 1deg;
   }
 }
-@media sceen and (max-width: 639px) {
+@media screen and (max-width: 639px) {
   .form__style {
     width: 90vw;
     rotate: 0.3deg;
@@ -1036,6 +1044,11 @@ header nav #menu__toggle {
   rotate: -1.5deg;
   border: none;
   outline: 3px solid #479AE6;
+}
+@media screen and (max-width: 639px) {
+  .form__style form > fieldset textarea {
+    rotate: -0.3deg;
+  }
 }
 .form__style form input[type=submit] {
   position: relative;
