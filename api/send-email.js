@@ -17,7 +17,7 @@ export default async function (req, res) {
 
   try {
     const info = await transporter.sendMail({
-      from: `"mi (michael's internet-Portfolio) - automatic response 🤖" <${process.env.EMAIL}>`,
+      from: `"mi - automatic response 🤖" <${process.env.EMAIL}>`,
       to: email,
       bcc: [process.env.COPY, process.env.EMAIL],
       subject: `Hi ${fname} ${lname} - Thank you for reaching out to me 😃`,
