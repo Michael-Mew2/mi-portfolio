@@ -301,7 +301,7 @@
         
         try {
             const PORT = 4000;
-            const response = await fetch(`http://localhost:${PORT}/send-email`, {
+            const response = await fetch(`/api/send-email`, { /* Local auf localhost:${PORT}/ */
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
