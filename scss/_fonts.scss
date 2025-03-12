@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Fancy-Font';
+    src: url(../fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Fancy-Font-italic';
+    src: url(../fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Basic-Font';
+    src: url(../fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Basic-Font-italic';
+    src: url(../fonts/Noto_Sans/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url(../fonts/fontawesome-free-6.5.2-web/webfonts/fa-solid-900.ttf);
+}
+
+// Font-Varaiables
+$fancy: 'Fancy-Font', serif;
+$basic: 'Basic-Font', serif;
+
+// Font-sizes
+
+$h1_lg: 140px;
+$h1_md: 9vw;
+$h1_sm: 60px;
+
+$h3_lg: 92px;
+$h3_md: 6vw;
+$h3_sm: 40px;
+
+$txt_lg: 1.250rem;
+$txt_sm: 0.750rem;
+
+// Font-Weights
+
+$font_extra_bold: 900;
+$font_bold: 700;
+$font_normal: 400;
+
+// Letter-Spacing
+
+$no_space: 0rem;
+$let_space: -.3rem;
+$cond: extra-condensed;
+
+
+h1 {
+
+    font-family: $fancy;
+    font-weight: $font_extra_bold;
+    font-size: $h1_lg;
+    letter-spacing: $let_space;
+    font-stretch: $cond;
+    text-align: center;
+    z-index: 50;
+    
+    @media screen and (max-width: $bp-ms) {
+        font-size: $h1_md;
+    }
+    
+    @media screen and (max-width: $bp-sm) {
+        font-size: $h1_sm;
+    }
+}
+
+h2 {
+    font-family: $fancy;
+    font-weight: $font_extra_bold;;
+    font-size: $h1_lg;
+    letter-spacing: $let_space;
+    font-stretch: $cond;
+    text-align: center;
+    z-index: 50;
+    
+    @media screen and (max-width: $bp-ms) {
+        font-size: $h1_md;
+    }
+    
+    @media screen and (max-width: $bp-sm) {
+        font-size: $h1_sm;
+    }
+} 
+
+h3 {
+    font-family: $fancy;
+    font-weight: $font_bold;;
+    font-size: $h3_lg;
+    letter-spacing: $no_space;
+    font-stretch: $cond;
+    text-align: center;
+    line-height: $h3_lg;
+
+    @media screen and (max-width: $bp-ms) {
+        font-size: $h3_md;
+        line-height: $h3_md;
+    }
+
+    @media screen and (max-width: $bp-sm){
+        font-size: $h3_sm;
+        line-height: $h3_sm;
+    }
+}
+
+p {
+    font-family: $basic;
+    line-height: 1.25;
+    font-size:  $txt_lg;
+    font-weight: 400;
+}
+
+.date__text {
+    font-family: $basic;
+}
+
+.label__text {
+    font-family: $basic;
+    font-weight: $font_bold;
+    font-size: $txt_sm;
+}
+
+.button__text {
+    font-family: $basic;
+    font-weight: $font_bold;
+    font-size: $txt_lg;
+}
+
+.clr__black {
+    color: $clr_black;
+}
+
+.clr__white {
+    color: $clr_white;
+}
+
+.clr__strong__black {
+    color: $clr_black;
+    font-weight: $font_bold;
+}
+
+.clr__strong__white {
+    color: $clr_white;
+    font-weight: $font_bold;
+    // font-size: 1rem;
+}
+
+input {
+    font-family: $basic;
+    line-height: 1.25;
+    font-size:  $txt_lg;
+    font-weight: 400;
+}
+
+textarea {
+    font-family: $basic;
+    line-height: 1.25;
+    font-size:  $txt_lg;
+    font-weight: 400;
+}

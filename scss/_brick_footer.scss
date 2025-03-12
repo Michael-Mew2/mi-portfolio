@@ -1,0 +1,36 @@
+.brick__footer {
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+
+    .brick__footer__transition {
+        margin: 6vw auto;
+        position: relative;
+        max-width: 80rem;
+        padding: 1.5rem;
+        margin: auto;
+        z-index: 5;
+
+        
+        
+    }
+    
+    .dec__end__block{
+        width: 100vw;
+        height: 50px;
+        position: absolute;
+        background-color: $clr_white;
+        top:-50px;
+        z-index: -3;
+    }
+
+    .dec__end__shadow {
+        width: 100vw;
+        height: 50px;
+        position: absolute;
+        background: linear-gradient(to bottom, $clr_shadow 0%, #38383800 100%);
+        top: calc(-50px + 40px);
+        z-index: -4;
+    }
+
+}
