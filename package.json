@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon --env-file=.env contact.js",
-    "build":"sass scss/main.scss css/styles.css",
+    "build": "[my-framework] build --output public",
+    "build-css":"sass scss/main.scss css/styles.css",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
