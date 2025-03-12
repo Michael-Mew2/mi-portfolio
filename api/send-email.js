@@ -23,7 +23,7 @@ export default async function (req, res) {
       subject: `Hi ${fname} ${lname} - Thank you for reaching out to me 😃`,
             text: `Moin (northern-german for "hi) ${fname} ${lname}, Thank you so much for getting in touch! I’ve received your message and will get back to you shortly. Here’s a quick look at the details you shared, just to keep everything transparent; Name: ${fname} ${lname}, company: ${company}, Phone Number: ${tel}, Email: ${email}, (Method: ${method}), Message: ${reason}. II’ll get back to you within a day or two, but if anything above needs correcting, please feel free to reach me directly at contact.michaels.website@gmail.com. Thanks again, and I look forward to connecting with you soon! Best regards Michael`,
             html: `
-            <h2>Moin (= northern-german for "hi") ${fname} ${lname},</h2>
+            <h2>Moin* ${fname} ${lname},</h2>
             <p>Thank you so much for getting in touch! I’ve received your message and will get back to you shortly. Here’s a quick look at the details you shared, just to keep everything transparent:</p>
             <ul>
             <li><strong>Name:</strong> ${fname} ${lname},</li>
@@ -36,7 +36,10 @@ export default async function (req, res) {
             <p>I’ll get back to you within a day or two, but if anything above needs correcting, please feel free to reach me directly at <a href="mailto:contact.michaels.website@gmail.com">contact.michaels.website@gmail.com</a>.</p>
             <p>Thanks again, and I look forward to connecting with you soon!</p>
             <p>Best regards</p>
-            <b>Michael 🤓</b>`,
+            <b>Michael 🤓</b>
+            <hr/>
+            <p>*moin = = northern-german for "hi"</p>
+            `,
     });
 
     res.status(200).json({ success: true, messageId: info.messageId });
