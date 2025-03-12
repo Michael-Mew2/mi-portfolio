@@ -1,448 +1,825 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>My Projects</title>
-    <link rel="shortcut icon" href="./pictures/icon/fav-ico_mi-projekts.png" type="image/x-icon">
-    <meta name="description" content="Here you can see a list of projects I either worked with or completed all by myself">
-</head>
-<body>
-     <!-- Nav-Bar -->
+    <link
+      rel="shortcut icon"
+      href="./pictures/icon/fav-ico_mi-projekts.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Here you can see a list of projects I either worked with or completed all by myself"
+    />
+  </head>
+  <body>
+    <!-- Nav-Bar -->
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./about.html" class="btn__simple">
-                        <p class="button__text">About Mi</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./skills.html" class="btn__simple">
-                        <p class="button__text">My Skills</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="logo__top">
-                        <div class="logo__box__top">
-                            <img src="./pictures/mi-logo-dark.svg" alt="Logo Michael">
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./projects.html" class="btn__simple">
-                        <p class="button__text">My Projects</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact.html" class="btn__simple">
-                        <p class="button__text">Contact Mi</p>
-                    </a>
-                </li>
-            </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="./about.html" class="btn__simple">
+              <p class="button__text">About Mi</p>
+            </a>
+          </li>
+          <li>
+            <a href="./skills.html" class="btn__simple">
+              <p class="button__text">My Skills</p>
+            </a>
+          </li>
+          <li>
+            <a href="./index.html" class="logo__top">
+              <div class="logo__box__top">
+                <img src="./pictures/mi-logo-dark.svg" alt="Logo Michael" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./projects.html" class="btn__simple">
+              <p class="button__text">My Projects</p>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html" class="btn__simple">
+              <p class="button__text">Contact Mi</p>
+            </a>
+          </li>
+        </ul>
 
-             <!-- Toggle Menu -->
-             <div id="menu__toggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
+        <!-- Toggle Menu -->
+        <div id="menu__toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
 
-                <ul class="hidden__menu">
-                    <li>
-                        <a href="./about.html" class="btn__simple">
-                            <p class="button__text">About Mi</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./skills.html" class="btn__simple">
-                            <p class="button__text">My Skills</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./projects.html" class="btn__simple">
-                            <p class="button__text">My Projects</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contact.html" class="btn__simple">
-                            <p class="button__text">Contact Mi</p>
-                        </a>
-                    </li>
-                </ul>
-                    
-                
-            </div>
-        </nav>
+          <ul class="hidden__menu">
+            <li>
+              <a href="./about.html" class="btn__simple">
+                <p class="button__text">About Mi</p>
+              </a>
+            </li>
+            <li>
+              <a href="./skills.html" class="btn__simple">
+                <p class="button__text">My Skills</p>
+              </a>
+            </li>
+            <li>
+              <a href="./projects.html" class="btn__simple">
+                <p class="button__text">My Projects</p>
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html" class="btn__simple">
+                <p class="button__text">Contact Mi</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Banner -->
-        <div class="hero hero__offset hero__projects">
-            <div class="hero__secondary__content">
-                <div class="headline__shadow__out">
-                    <h1>My Projects</h1>
-                    <div class="headline__shadow__element"></div>
-                </div>
-            </div>
-            <div class="hero__decoration__bottom"></div>
+      <!-- Banner -->
+      <div class="hero hero__offset hero__projects">
+        <div class="hero__secondary__content">
+          <div class="headline__shadow__out">
+            <h1>My Projects</h1>
+            <div class="headline__shadow__element"></div>
+          </div>
         </div>
+        <div class="hero__decoration__bottom"></div>
+      </div>
 
-        <!-- About Me text -->
-        <section class="content__projects">
-            <div class="content">
-                <p class="clr__strong__white">Here, you’ll find a collection of projects that mark my path from early experiments to refined work, each shaped by curiosity and a drive to grow. From my very first self-taught HTML site to collaborative projects with companies, each experience has expanded my skills and sparked new ideas. Explore the highlights below to see where I’ve been, what I’ve created, and how each step has prepared me for the next chapter in digital innovation.
+      <!-- About Me text -->
+      <section class="content__projects">
+        <div class="content">
+          <p class="clr__strong__white">
+            Here, you’ll find a collection of projects that mark my path from
+            early experiments to refined work, each shaped by curiosity and a
+            drive to grow. From my very first self-taught HTML site to
+            collaborative projects with companies, each experience has expanded
+            my skills and sparked new ideas. Explore the highlights below to see
+            where I’ve been, what I’ve created, and how each step has prepared
+            me for the next chapter in digital innovation.
+          </p>
+        </div>
+      </section>
+
+      <!-- Project-list currently working - Part 1 -->
+      <section class="content">
+        <div class="stations__flex">
+          <h2>Projects I'm still involved with</h2>
+
+          <!-- Formularlotsen Homepage -->
+          <div class="stations__content" id="formularlotsen-homepage">
+            <div class="stations__textside">
+              <h3>Formularlotsen new website</h3>
+              <div class="label__box">
+                <div class="label label__green" aria-label="Badge">
+                  <p class="label__text">Work in Progress</p>
+                </div>
+                <div class="label label__blue">
+                  <p class="label__text">REACT</p>
+                </div>
+                <div class="label label__pink">
+                  <p class="label__text">SCSS</p>
+                </div>
+              </div>
+              <p>
+                For the new version of the Bremerhavener Formularlotsen website, I wanted to create something that really stands out while being accessible to everyone. I'm currently focusing on making it visually striking but also user-friendly. The site features high contrast for better visibility, a clear and organized structure, support for multiple languages, and ARIA labels to describe important elements. It's designed to be super easy to navigate and has a modern look. Plus, I planned to add extra information and resources, like alternative contacts for issues we can't handle and useful tips about the forms. Stay tuned—it's going to be awesome!
+              </p>
+              <a
+                href="https://github.com/Michael-Mew2/Formularlotsen"
+                class="btn__arrow btn__yellow"
+                aria-label="This button opens the GitHub Repository of the new Formularlotsen Website"
+                target="_blank"
+              >
+                <p>GitHub Repo</p>
+              </a>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/project_website_bremerhavener_formularlotsen_dev.png"
+                alt="Screenshot of the new Formularlotsen Homepage"
+              />
+            </div>
+          </div>
+
+          <!-- pixel-together -->
+          <div class="stations__content" id="pixel-together">
+            <div class="stations__textside">
+              <h3>pixel-together</h3>
+              <div class="label__box">
+                <div class="label label__green" aria-label="Badge">
+                  <p class="label__text">Work in Progress</p>
+                </div>
+                <div class="label label__blue">
+                  <p class="label__text">REACT</p>
+                </div>
+                <div class="label label__pink">
+                  <p class="label__text">MantineUI</p>
+                </div>
+                <div class="label label__yellow">
+                  <p class="label__text">MongoDB</p>
+                </div>
+                <div class="label label__green">
+                  <p class="label__text">socket.io</p>
+                </div>
+                <div class="label label__blue">
+                  <p class="label__text">Konva Canvas</p>
+                </div>
+              </div>
+              <p>
+                For our final project at DCI, we wanted to challenge ourselves and showcase our ability to work with a mix of familiar and new technologies. That's why we created "pixel-together." As the project manager, I led a team of three, including myself, and we used technologies like React, AJV, JSON Web Token, Express.js, Nodemailer, CORS, MongoDB, Node, and Mongoose, along with new ones such as Zustand, Express-RateLimiter, Socket.io, Konva Canvas, and Mantine UI. Inspired by Reddit's r/place, our site lets users place pixels on a shared canvas within a set time frame to create a collaborative artwork. The site isn't online yet as it's still in progress and we have limited resources for moderation.
+              </p>
+              <a
+                href="https://github.com/Michael-Mew2/pixel-together"
+                class="btn__arrow btn__pink"
+                aria-label="This button opens the GitHub Repository of our final project for the DCI: pixel-together"
+              >
+                <p>GitHub Repo</p>
+              </a>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/project_website_pixel-together_dev.png"
+                alt="Screenshot pixel-together-website"
+              />
+            </div>
+          </div>
+
+          <!-- lua.io -->
+          <div class="stations__content" id="lua-io">
+            <div class="stations__textside">
+              <h3>lua.io</h3>
+              <div class="label__box">
+                <div class="label label__green" aria-label="Badge">
+                  <p class="label__text">Work in Progress</p>
+                </div>
+                <div class="label label__blue">
+                  <p class="label__text">REACT</p>
+                </div>
+                <div class="label label__pink">
+                  <p class="label__text">Material UI</p>
+                </div>
+                <div class="label label__yellow">
+                  <p class="label__text">Axios</p>
+                </div>
+                <div class="label label__green">
+                  <p class="label__text">MongoDB</p>
+                </div>
+                <div class="label label__blue">
+                  <p class="label__text">express.js</p>
+                </div>
+              </div>
+              <p>
+                I built lua.io as a way to anonymously share and discover music
+                from around the world. I like to think of it as standing on the
+                moon, shouting your favorite song to the world – and the world
+                shouts back. 🌕🎶 The idea is simple: you submit a Deezer or
+                Spotify song link, and in return, you get a new track to
+                explore. If your song is already in the MongoDB database, you’ll
+                know that someone else out there shares your taste! On the
+                backend, I used Express.js, the Spotify & Deezer APIs, and
+                Nodemailer for handling requests and emails. The frontend is
+                built with React & Material UI for a clean and intuitive
+                experience. Support for iTunes & YouTube Music is in the works!
+              </p>
+              <a
+                href="https://github.com/Michael-Mew2/lua.io"
+                class="btn__arrow btn__blue"
+                aria-label="This button opens the GitHub Repository of my lua.io Project"
+              >
+                <p>GitHub Repo</p>
+              </a>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/project_website_lua_dev.png"
+                alt="Screenshot lua.io-website"
+              />
+            </div>
+          </div>
+
+          <!-- --- -->
+        </div>
+      </section>
+
+      <!-- Nice to know brick -->
+      <section class="content brick__projects">
+        <div class="brick brick__blue">
+          <div class="brick__out">
+            <div class="headline__shadow__out">
+              <h2>Nice to Know!</h2>
+              <div class="headline__shadow__element"></div>
+            </div>
+            <div class="brick__frontside">
+              <div class="brick__content">
+                <p class="clr__strong__white">
+                  At S&S Transporte, I took care of our social media posts—from
+                  editing images to crafting the perfect captions. Using
+                  Photoshop and Illustrator, I customized stock images and
+                  paired them with fun, lighthearted, or insightful quotes that
+                  reflected our company and its philosophy. Of course, I also
+                  kept an eye on performance, using Facebook Business Manager to
+                  track and optimize post reach.<br /><br />
+
+                  Curious to see some of my work? Check out the Instagram page I
+                  managed!
                 </p>
+                <a
+                  href="https://www.instagram.com/sus_transporte/"
+                  class="btn__arrow"
+                  target="_blank"
+                >
+                  <p class="button__text">Let's have a look</p>
+                </a>
+              </div>
+
+              <div class="brick__picture">
+                <img
+                  src="./pictures/nice_to_know/ntk_sus-posts-ig.png"
+                  alt="S&S Transporte instagram-posts"
+                />
+              </div>
+
+              <div class="brick__topside"></div>
+              <div class="brick__rightside"></div>
+              <!-- <div class="brick__shadow"></div> -->
+              <!-- Broken -->
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Project-list currently working -->
-        <section class="content">
-            <div class="stations__flex">
-                <h2>Projects I'm still involved with</h2>
-
-                <!-- Benfica-Fansite -->
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>Benfica Fanpage</h3>
-                        <div class="label__box">
-                            <div class="label label__green" aria-label="Badge">
-                                <p class="label__text">Work in Progress</p>
-                            </div>
-                            <div class="label label__blue">
-                                <p class="label__text">REACT</p>
-                            </div>
-                            <div class="label label__pink">
-                                <p class="label__text">CSS</p>
-                            </div>
-                        </div>
-                        <p>I'm a huge fan of the Portuguese football team S.L. Benfica, so I decided to create a fan site for them as a project for my course. I built the site using React.js and integrated a sports database to fetch live data. Although it isn't finished yet, I'm proud of its look and functionality!</p>
-                        <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
-                            <p>Visit Website</p>
-                        </a> -->
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/project_website_slb.png" alt="Screenshot Benfica Fan-website">
-                    </div>
+      <!-- Project-list currently working - Part 2 -->
+      <section class="content">
+        <div class="stations__flex">
+          <!-- Benfica-Fansite -->
+          <div class="stations__content" id="Benfica-Fan-Page">
+            <div class="stations__textside">
+              <h3>Benfica Fanpage</h3>
+              <div class="label__box">
+                <div class="label label__green" aria-label="Badge">
+                  <p class="label__text">Work in Progress</p>
                 </div>
-
-                <!-- This Website -->
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>This Website?</h3>
-                        <div class="label__box">
-                            <div class="label label__green">
-                                <p class="label__text">(kinda) Work in Progress</p>
-                            </div>
-                            <div class="label label__yellow">
-                                <p class="label__text">HTML</p>
-                            </div>
-                            <div class="label label__pink">
-                                <p class="label__text">SCSS</p>
-                            </div>
-                        </div>
-                        <p>Yes! Why? Because this was the first complete website I built during my course at the DCI. I created it using only HTML and SCSS. I hope you like this website as much as I do! <i class="fa-solid fa-face-smile-beam"></i></p></p>
-                        <a href="./index.html" class="btn__arrow btn__blue">
-                            <p>Back to Start</p>
-                        </a>
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/project_website_mi.png" alt="Screenshot Mi-Website">
-                    </div>
+                <div class="label label__blue">
+                  <p class="label__text">REACT</p>
                 </div>
-
-
-                <!-- Formularlotsen -->
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>Rebranding Formularlotsen</h3>
-                        <div class="label__box">
-                            <div class="label label__green">
-                                <p class="label__text">Work in Progress</p>
-                            </div>
-                            <div class="label label__yellow">
-                                <p class="label__text">Rebranding</p>
-                            </div>
-                            <div class="label label__pink">
-                                <p class="label__text">Adobe Illustrator</p>
-                            </div>
-                            <div class="label label__blue">
-                                <p class="label__text">Adobe XD</p>
-                            </div>
-                        </div>
-                        <p>Alongside volunteering to help people in need at 'Formularlotsen,' I took the chance to give their visual identity a fresh look! Using Adobe Illustrator, I crafted a new logo and introduced a vibrant, eye-catching color scheme to make 'Formularlotsen' stand out in our clients' minds. This rebranding journey also inspired me to create a concept for a sleek, user-friendly website. While the design is ready to go, I haven’t yet had the time to code it—but it’s on my list!</p>
-                        <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
-                            <p>Visit Website</p>
-                        </a> -->
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/Logo_Formularlotsen_wide.png" alt="Logo Formularlotsen">
-                    </div>
+                <div class="label label__pink">
+                  <p class="label__text">CSS</p>
                 </div>
+              </div>
+              <p>
+                I'm a huge fan of the Portuguese football team S.L. Benfica, so
+                I decided to create a fan site for them as a project for my
+                course. I built the site using React.js and integrated a sports
+                database to fetch live data. Although it isn't finished yet, I'm
+                proud of its look and functionality!
+              </p>
+              <a
+                href="https://github.com/Michael-Mew2/Benfica-Fanpage"
+                class="btn__arrow btn__pink"
+                aria-label="This button opens the GitHub Repository of my Benfica Fan-Page"
+                target="_blank"
+              >
+                <p>GitHub Repo</p>
+              </a>
             </div>
-        </section>
-
-        <!-- Project-list used to work on -->
-        <section class="content">
-            <div class="stations__flex">
-                <h2>The Projects I used to work on</h2>
-
-                <!-- Gartenservice H+P -->
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>Gartenservice Hasselbrock und Partner</h3>
-                        <div class="label__box">
-                            <div class="label label__yellow" aria-label="Badge">
-                                <p class="label__text">Branding</p>
-                            </div>
-                            <div class="label label__pink">
-                                <p class="label__text">Adobe Illustrator</p>
-                            </div>
-                        </div>
-                        <p>I had the awesome opportunity to shape the branding for 'Hasselbrock und Partner', a newly founded gardening service. As part of the project, I designed the logo and developed the entire corporate identity using Adobe Illustrator. A key focus was to align this branding closely with 'Hasselbrock und Partner' Construction, as these two companies are connected and needed a shared visual style for easy recognition. The result? A fresh simple look that ties the two together, giving the new gardening service a unique identity while keeping that familiar 'Hasselbrock und Partner' vibe!</p>
-                        <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
-                            <p>Visit Website</p>
-                        </a> -->
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/Logo_H&P_Gartenservice_FarbeV1.png" alt="Logo Gartenservice Hasselbrock+Partner">
-                    </div>
-                </div>
-
-                <!-- Bauunternehmung H+P -->
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>Bauunternehmen Hasselbrock und Partner</h3>
-                        <div class="label__box">
-                            <div class="label label__yellow" aria-label="Badge">
-                                <p class="label__text">Rebranding</p>
-                            </div>
-                        </div>
-                        <p>I had the pleasure of creating a new, sleek logo for the construction Company 'Bauunternehmung Hasselbrock und Partner GmbH'. Using Adobe Illustrator, I focused on a clean, minimalist design to reflect the company’s professional and reliable image. The goal was simplicity with impact—something bold yet understated that stands out without being flashy. Now, Hasselbrock und Partner has a fresh logo that captures their essence perfectly!</p>
-                        <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
-                            <p>Visit Website</p>
-                        </a> -->
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/SVG/H+P_Logo_original.svg" alt="Logo Bauunternehmung Hasselbrock+Partner">
-                    </div>
-                </div>
-
-                <!-- S&S Transporte -->
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>S&S Transporte</h3>
-                        <div class="label__box">
-                            <div class="label label__yellow" aria-label="Badge">
-                                <p class="label__text">Rebranding</p>
-                            </div>
-                            <div class="label label__blue" aria-label="Badge">
-                                <p class="label__text">New Website</p>
-                            </div>
-                        </div>
-                        <p>My first project after graduation? <br> A website for S&S Transporte! It started as a digital business card to boost their online presence, but I wanted to make it truly useful for customers, too. I also designed a cohesive corporate identity (CI) to create lasting brand recognition across all platforms. Now, clients can easily connect with us directly through the site for their specific needs. The result? A website and brand identity that not only inform but also streamline communication and strengthen brand recognition!</p>
-                        <a href="https://www.sus-transporte.de" class="btn__arrow btn__blue" target="_blank">
-                            <p>Visit S&S Transporte</p>
-                        </a>
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/project_website_sus.png" alt="Logo S&S Transporte">
-                    </div>
-                </div>
-
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/project_website_slb.png"
+                alt="Screenshot Benfica Fan-website"
+              />
             </div>
-        </section>
+          </div>
 
-        <!-- Nice to know brick -->
-        <section class="content brick__projects">
-            <div class="brick brick__blue">
-                <div class="brick__out">
-                    <div class="headline__shadow__out">
-                        <h2>Nice to Know!</h2>
-                        <div class="headline__shadow__element"></div>
-                    </div>
-                    <div class="brick__frontside">
-                        <div class="brick__content">
-                            <p class="clr__strong__white">After graduating, I spent a year focused on shooting and editing product photos for a small general store, where I honed my eye for detail and gained hands-on experience in lighting, object positioning, and color coordination. This role taught me the importance of precise placement and enhanced my skills in photo editing and retouching to ensure every shot looked its best.</p>
-                           <!--  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn__arrow" target="_blank">
+          <!-- This Website -->
+          <div class="stations__content" id="mi-website">
+            <div class="stations__textside">
+              <h3>This Website?</h3>
+              <div class="label__box">
+                <div class="label label__green">
+                  <p class="label__text">(kinda) Work in Progress</p>
+                </div>
+                <div class="label label__yellow">
+                  <p class="label__text">HTML</p>
+                </div>
+                <div class="label label__pink">
+                  <p class="label__text">SCSS</p>
+                </div>
+              </div>
+              <p>
+                Yes! Why? Because this was the first complete website I built
+                during my course at the DCI. I created it using only HTML and
+                SCSS. I hope you like this website as much as I do!
+                <i class="fa-solid fa-face-smile-beam"></i>
+              </p>
+              <div class="btn__group">
+                <a
+                  href="https://github.com/Michael-Mew2/mi-portfolio"
+                  class="btn__arrow btn__green"
+                  target="_blank"
+                  aria-label="Link to the Github repository of the portfolio"
+                >
+                  <p>GitHub Repo</p>
+                </a>
+                <a
+                  href="./index.html"
+                  class="btn__arrow btn__blue"
+                  aria-label="Link to this website. This link just open the homepage in a new tab"
+                >
+                  <p>Back to Start</p>
+                </a>
+              </div>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/project_website_mi.png"
+                alt="Screenshot Mi-Website"
+              />
+            </div>
+          </div>
+
+          <!-- Formularlotsen -->
+          <div class="stations__content" id="fromularlotsen-rebranding">
+            <div class="stations__textside">
+              <h3>Rebranding Formularlotsen</h3>
+              <div class="label__box">
+                <div class="label label__green">
+                  <p class="label__text">Work in Progress</p>
+                </div>
+                <div class="label label__yellow">
+                  <p class="label__text">Rebranding</p>
+                </div>
+                <div class="label label__pink">
+                  <p class="label__text">Adobe Illustrator</p>
+                </div>
+                <div class="label label__blue">
+                  <p class="label__text">Adobe XD</p>
+                </div>
+              </div>
+              <p>
+                Alongside volunteering to help people in need at
+                'Formularlotsen,' I took the chance to give their visual
+                identity a fresh look! Using Adobe Illustrator, I crafted a new
+                logo and introduced a vibrant, eye-catching color scheme to make
+                'Formularlotsen' stand out in our clients' minds. This
+                rebranding journey also inspired me to create a concept for a
+                sleek, user-friendly website. While the design is ready to go, I
+                haven’t yet had the time to code it—but it’s on my list!
+              </p>
+              <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
+                            <p>Visit Website</p>
+                        </a> -->
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/Logo_Formularlotsen_wide.png"
+                alt="Logo Formularlotsen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project-list used to work on -->
+      <section class="content">
+        <div class="stations__flex">
+          <h2>The Projects I used to work on</h2>
+
+          <!-- Gartenservice H+P -->
+          <div class="stations__content">
+            <div class="stations__textside">
+              <h3>Gartenservice Hasselbrock und Partner</h3>
+              <div class="label__box">
+                <div class="label label__yellow" aria-label="Badge">
+                  <p class="label__text">Branding</p>
+                </div>
+                <div class="label label__pink">
+                  <p class="label__text">Adobe Illustrator</p>
+                </div>
+              </div>
+              <p>
+                I had the awesome opportunity to shape the branding for
+                'Hasselbrock und Partner', a newly founded gardening service. As
+                part of the project, I designed the logo and developed the
+                entire corporate identity using Adobe Illustrator. A key focus
+                was to align this branding closely with 'Hasselbrock und
+                Partner' Construction, as these two companies are connected and
+                needed a shared visual style for easy recognition. The result? A
+                fresh simple look that ties the two together, giving the new
+                gardening service a unique identity while keeping that familiar
+                'Hasselbrock und Partner' vibe!
+              </p>
+              <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
+                            <p>Visit Website</p>
+                        </a> -->
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/Logo_H&P_Gartenservice_FarbeV1.png"
+                alt="Logo Gartenservice Hasselbrock+Partner"
+              />
+            </div>
+          </div>
+
+          <!-- Bauunternehmung H+P -->
+          <div class="stations__content">
+            <div class="stations__textside">
+              <h3>Bauunternehmen Hasselbrock und Partner</h3>
+              <div class="label__box">
+                <div class="label label__yellow" aria-label="Badge">
+                  <p class="label__text">Rebranding</p>
+                </div>
+              </div>
+              <p>
+                I had the pleasure of creating a new, sleek logo for the
+                construction Company 'Bauunternehmung Hasselbrock und Partner
+                GmbH'. Using Adobe Illustrator, I focused on a clean, minimalist
+                design to reflect the company’s professional and reliable image.
+                The goal was simplicity with impact—something bold yet
+                understated that stands out without being flashy. Now,
+                Hasselbrock und Partner has a fresh logo that captures their
+                essence perfectly!
+              </p>
+              <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
+                            <p>Visit Website</p>
+                        </a> -->
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/SVG/H+P_Logo_original.svg"
+                alt="Logo Bauunternehmung Hasselbrock+Partner"
+              />
+            </div>
+          </div>
+
+          <!-- S&S Transporte -->
+          <div class="stations__content">
+            <div class="stations__textside">
+              <h3>S&S Transporte</h3>
+              <div class="label__box">
+                <div class="label label__yellow" aria-label="Badge">
+                  <p class="label__text">Rebranding</p>
+                </div>
+                <div class="label label__blue" aria-label="Badge">
+                  <p class="label__text">New Website</p>
+                </div>
+              </div>
+              <p>
+                My first project after graduation? <br />
+                A website for S&S Transporte! It started as a digital business
+                card to boost their online presence, but I wanted to make it
+                truly useful for customers, too. I also designed a cohesive
+                corporate identity (CI) to create lasting brand recognition
+                across all platforms. Now, clients can easily connect with us
+                directly through the site for their specific needs. The result?
+                A website and brand identity that not only inform but also
+                streamline communication and strengthen brand recognition!
+              </p>
+              <a
+                href="https://www.sus-transporte.de"
+                class="btn__arrow btn__blue"
+                target="_blank"
+              >
+                <p>Visit S&S Transporte</p>
+              </a>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/project_website_sus.png"
+                alt="Logo S&S Transporte"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nice to know brick -->
+      <section class="content brick__projects">
+        <div class="brick brick__blue">
+          <div class="brick__out">
+            <div class="headline__shadow__out">
+              <h2>Nice to Know!</h2>
+              <div class="headline__shadow__element"></div>
+            </div>
+            <div class="brick__frontside">
+              <div class="brick__content">
+                <p class="clr__strong__white">
+                  After graduating, I spent a year focused on shooting and
+                  editing product photos for a small general store, where I
+                  honed my eye for detail and gained hands-on experience in
+                  lighting, object positioning, and color coordination. This
+                  role taught me the importance of precise placement and
+                  enhanced my skills in photo editing and retouching to ensure
+                  every shot looked its best.
+                </p>
+                <!--  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn__arrow" target="_blank">
                                 <p class="button__text">Führt nicht weg</p>
                             </a> -->
-                        </div>
-                        
-                        <div class="brick__picture">
-                            <img src="./pictures/nice_to_know/AdobeStock_171995267.jpeg" alt="product-photo-shooting"/>
-                        </div>
-                    
-                        <div class="brick__topside"></div>
-                        <div class="brick__rightside"></div>
-                        <!-- <div class="brick__shadow"></div> --> <!-- Broken -->
-                    </div>
-        
-                </div>
+              </div>
+
+              <div class="brick__picture">
+                <img
+                  src="./pictures/nice_to_know/AdobeStock_171995267.jpeg"
+                  alt="product-photo-shooting"
+                />
+              </div>
+
+              <div class="brick__topside"></div>
+              <div class="brick__rightside"></div>
+              <!-- <div class="brick__shadow"></div> -->
+              <!-- Broken -->
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Project-list part two -->
-        <section class="content">
-            <div class="stations__flex">
-
-
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>App-Concept</h3>
-                        <div class="label__box">
-                            <div class="label label__pink" aria-label="Badge">
-                                <p class="label__text">Student Project</p>
-                            </div>
-                        </div>
-                        <p>As part of a three-person team, I worked with the company 'Huth' over a three-month period to develop a concept for a sales-boosting app. Our goal was to create a tool to support sales representatives on-site, specifically in advising customers and closing sales for fencing products. The app concept incorporated features like augmented reality (AR) to provide visual aids that help customers better visualize products in real time. This project allowed us to bridge digital tools with hands-on sales support, creating an innovative solution to enhance the sales process and improve customer experience.</p>
-                        <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
+      <!-- Project-list part two -->
+      <section class="content">
+        <div class="stations__flex">
+          <div class="stations__content">
+            <div class="stations__textside">
+              <h3>App-Concept</h3>
+              <div class="label__box">
+                <div class="label label__pink" aria-label="Badge">
+                  <p class="label__text">Student Project</p>
+                </div>
+              </div>
+              <p>
+                As part of a three-person team, I worked with the company 'Huth'
+                over a three-month period to develop a concept for a
+                sales-boosting app. Our goal was to create a tool to support
+                sales representatives on-site, specifically in advising
+                customers and closing sales for fencing products. The app
+                concept incorporated features like augmented reality (AR) to
+                provide visual aids that help customers better visualize
+                products in real time. This project allowed us to bridge digital
+                tools with hands-on sales support, creating an innovative
+                solution to enhance the sales process and improve customer
+                experience.
+              </p>
+              <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
                             <p>Visit Website</p>
                         </a> -->
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/Huth-Logo-min.png" alt="Logo Huth GmbH">
-                    </div>
-                </div>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/Huth-Logo-min.png"
+                alt="Logo Huth GmbH"
+              />
+            </div>
+          </div>
 
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>Little Campus</h3>
-                        <div class="label__box">
-                            <div class="label label__pink" aria-label="Badge">
-                                <p class="label__text">Student Project</p>
-                            </div>
-                            <div class="label label__yellow" aria-label="Badge">
-                                <p class="label__text">Rebranding</p>
-                            </div>
-                        </div>
-                        <p>During my studies, I was part of a rebranding project for the university’s childcare facility. Our goal was to make this service more appealing to student parents and increase its visibility on campus. By refreshing the branding and emphasizing its benefits, we aimed to create a welcoming image that highlighted this valuable support option, making it easier for students with children to engage with and benefit from the university’s childcare offerings.</p>
-                        <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
+          <div class="stations__content">
+            <div class="stations__textside">
+              <h3>Little Campus</h3>
+              <div class="label__box">
+                <div class="label label__pink" aria-label="Badge">
+                  <p class="label__text">Student Project</p>
+                </div>
+                <div class="label label__yellow" aria-label="Badge">
+                  <p class="label__text">Rebranding</p>
+                </div>
+              </div>
+              <p>
+                During my studies, I was part of a rebranding project for the
+                university’s childcare facility. Our goal was to make this
+                service more appealing to student parents and increase its
+                visibility on campus. By refreshing the branding and emphasizing
+                its benefits, we aimed to create a welcoming image that
+                highlighted this valuable support option, making it easier for
+                students with children to engage with and benefit from the
+                university’s childcare offerings.
+              </p>
+              <!-- <a href="https://www.youtube.com/watch?v=dbbque0Y4FU" class="btn__arrow btn__blue">
                             <p>Visit Website</p>
                         </a> -->
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/little campus/DSC03520.jpg" alt="Little Campus">
-                    </div>
-                </div>
-
-                <div class="stations__content">
-                    <div class="stations__textside">
-                        <h3>Curso LCP</h3>
-                        <div class="label__box">
-                            <div class="label label__green" aria-label="Badge">
-                                <p class="label__text">My first website</p>
-                            </div>
-                            <div class="label label__blue" aria-label="Badge">
-                                <p class="label__text">New Website</p>
-                            </div>
-                        </div>
-                        <p>My first website was for a Portuguese language course in Bremerhaven, which I built entirely in HTML. Although it was never fully completed or published (until now), this project taught me a lot. I took a self-driven approach, relying on YouTube tutorials for guidance after finding the official resources overly complicated and hard to navigate. Working independently on this project gave me a foundational understanding of web structure and coding principles, sparking my interest in web development and encouraging me to keep learning and improving.</p>
-                        <a href="pictures/projects/LCP-Bremen, Bremerhaven, Braunschweig/index.html" class="btn__arrow btn__green" target="_blank">
-                            <p>Visit Website</p>
-                        </a>
-                    </div>
-                    <div class="stations__pictureside">
-                        <img src="./pictures/projects/LCP-Bremen, Bremerhaven, Braunschweig/images/logo LCP V2.png" alt="Logo Curso de Lingua e Cultura Portuguesa">
-                    </div>
-                </div>
-
             </div>
-        </section>
-
-        <section class="brick__footer brick__footer__projects">
-            <div class="brick__footer__transition">
-
-                
-                <div class="brick brick__green">
-                    <div class="brick__out">
-                        <div class="headline__shadow__out">
-                            <h2>Have a Job?</h2>
-                            <div class="headline__shadow__element"></div>
-                        </div>
-                        <div class="brick__frontside">
-                            <div class="brick__content">
-                                <p class="clr__strong__black">Like what you see and have a job for me? Awesome! I’m seeking an internship (front-end or full-stack) to gain experience and refine my skills—or even a full-time role! Just reach out via my contact form or connect with me on LinkedIn. Let’s make something great together!</p>
-                                <a href="./contact.html"  class="btn__arrow">
-                                    <p class="button__text">Contact Mi!</p>
-                                </a>
-                            </div>
-                            
-                            <div class="brick__picture">
-                                <img src="./pictures/AdobeStock_266305851.jpeg" alt="You should really think about it"/>
-                            </div>
-                            
-                            <div class="brick__topside"></div>
-                            <div class="brick__rightside"></div>
-                            <!-- <div class="brick__shadow"></div> --> <!-- Broken -->
-                        </div>
-                        
-                    </div>
-                </div>
-                
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/little campus/DSC03520.jpg"
+                alt="Little Campus"
+              />
             </div>
+          </div>
 
-            <div class="dec__end__block"></div>
-            <div class="dec__end__shadow"></div>
+          <div class="stations__content">
+            <div class="stations__textside">
+              <h3>Curso LCP</h3>
+              <div class="label__box">
+                <div class="label label__green" aria-label="Badge">
+                  <p class="label__text">My first website</p>
+                </div>
+                <div class="label label__blue" aria-label="Badge">
+                  <p class="label__text">New Website</p>
+                </div>
+              </div>
+              <p>
+                My first website was for a Portuguese language course in
+                Bremerhaven, which I built entirely in HTML. Although it was
+                never fully completed or published (until now), this project
+                taught me a lot. I took a self-driven approach, relying on
+                YouTube tutorials for guidance after finding the official
+                resources overly complicated and hard to navigate. Working
+                independently on this project gave me a foundational
+                understanding of web structure and coding principles, sparking
+                my interest in web development and encouraging me to keep
+                learning and improving.
+              </p>
+              <a
+                href="pictures/projects/LCP-Bremen, Bremerhaven, Braunschweig/index.html"
+                class="btn__arrow btn__green"
+                target="_blank"
+              >
+                <p>Visit Website</p>
+              </a>
+            </div>
+            <div class="stations__pictureside">
+              <img
+                src="./pictures/projects/LCP-Bremen, Bremerhaven, Braunschweig/images/logo LCP V2.png"
+                alt="Logo Curso de Lingua e Cultura Portuguesa"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="brick__footer brick__footer__projects">
+        <div class="brick__footer__transition">
+          <div class="brick brick__green">
+            <div class="brick__out">
+              <div class="headline__shadow__out">
+                <h2>Have a Job?</h2>
+                <div class="headline__shadow__element"></div>
+              </div>
+              <div class="brick__frontside">
+                <div class="brick__content">
+                  <p class="clr__strong__black">
+                    Like what you see and have a job for me? Awesome! I’m
+                    seeking an internship (front-end or full-stack) to gain
+                    experience and refine my skills—or even a full-time role!
+                    Just reach out via my contact form or connect with me on
+                    LinkedIn. Let’s make something great together!
+                  </p>
+                  <a href="./contact.html" class="btn__arrow">
+                    <p class="button__text">Contact Mi!</p>
+                  </a>
+                </div>
+
+                <div class="brick__picture">
+                  <img
+                    src="./pictures/AdobeStock_266305851.jpeg"
+                    alt="You should really think about it"
+                  />
+                </div>
+
+                <div class="brick__topside"></div>
+                <div class="brick__rightside"></div>
+                <!-- <div class="brick__shadow"></div> -->
+                <!-- Broken -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dec__end__block"></div>
+        <div class="dec__end__shadow"></div>
+      </section>
     </main>
 
     <footer>
-                <!-- Footer top -->
-                <section class="footer__top">
-                    <div class="footer__top__left">
-                        <div class="footer__top__left__logo">
-                            <img src="./pictures/Weiß für dunklen Hintergrund.svg" alt="Logo Michael">        
-                        </div>
-        
-                        <div class="footer__top__left__text">
-                            <p class="clr__white">Always looking at the bright side of life since 2024</p>
-                        </div>
-                    </div>
-        
-                    <div class="footer__top__right">
-        
-                    </div>
-                </section>
-        
-                <!-- Footer Bottom -->
-                <section class="footer__bottom">
-                    <div class="footer__bottom__left">
-                        <p class="clr__black">&copy Michael 2024, hugely inspired from the website of <a class="clr__strong__black" href="https://ustwogames.co.uk/">ustwo games</a> (pls don't sue me)</p>
-                    </div>
-        
-                    <div class="footer__bottom__right">
-                        <div class="socials socials__dark">
-                            <!-- <a href="./backbone.html" class="btn__social btn__social__backbone" aria-label="this button brings you to the asset library" title="Backbone.gif" target="_blank">
+      <!-- Footer top -->
+      <section class="footer__top">
+        <div class="footer__top__left">
+          <div class="footer__top__left__logo">
+            <img
+              src="./pictures/Weiß für dunklen Hintergrund.svg"
+              alt="Logo Michael"
+            />
+          </div>
+
+          <div class="footer__top__left__text">
+            <p class="clr__white">
+              Always looking at the bright side of life since 2024
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__top__right"></div>
+      </section>
+
+      <!-- Footer Bottom -->
+      <section class="footer__bottom">
+        <div class="footer__bottom__left">
+          <p class="clr__black">
+            &copy Michael 2024, hugely inspired from the website of
+            <a class="clr__strong__black" href="https://ustwogames.co.uk/"
+              >ustwo games</a
+            >
+            (pls don't sue me)
+          </p>
+        </div>
+
+        <div class="footer__bottom__right">
+          <div class="socials socials__dark">
+            <!-- <a href="./backbone.html" class="btn__social btn__social__backbone" aria-label="this button brings you to the asset library" title="Backbone.gif" target="_blank">
                                 <i class="fa-solid fa-bone"></i>
                             </a> -->
-                        
-                            <a href="https://github.com/Michael-Mew2" class="btn__social" target="_blank" aria-label="This button brings you to my Github-account">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                            
-                            <a href="https://www.linkedin.com/in/michael-marques-das-neves/" target="_blank" class="btn__social" aria-label="This button brings you to my LinkedIn-account">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        
-                            <a href="https://www.xing.com/profile/Michael_MarquesdasNeves" class="btn__social" target="_blank" aria-label="This button brings you to my Xing-account">
-                                <i class="fa-brands fa-xing"></i>
-                            </a>
-                        
-                            <a href="https://www.behance.net/michaeldasneves" class="btn__social" target="_blank" aria-label="This button brings you to my empty Behance-account">
-                                <i class="fa-brands fa-behance"></i>
-                            </a>
-                        
-                        </div>
-                    </div>
-                </section>
-        
+
+            <a
+              href="https://github.com/Michael-Mew2"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my Github-account"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/michael-marques-das-neves/"
+              target="_blank"
+              class="btn__social"
+              aria-label="This button brings you to my LinkedIn-account"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://www.xing.com/profile/Michael_MarquesdasNeves"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my Xing-account"
+            >
+              <i class="fa-brands fa-xing"></i>
+            </a>
+
+            <a
+              href="https://www.behance.net/michaeldasneves"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my empty Behance-account"
+            >
+              <i class="fa-brands fa-behance"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
