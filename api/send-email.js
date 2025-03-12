@@ -38,7 +38,7 @@ export default async function (req, res) {
             <p>Best regards</p>
             <b>Michael 🤓</b>
             <hr/>
-            <p>*moin = = northern-german for "hi"</p>
+            <p>*moin = northern-german for "hi"</p>
             `,
     });
 
