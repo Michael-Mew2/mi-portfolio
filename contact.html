@@ -347,7 +347,7 @@
           if (window.location.hostname.includes("vercel")) {
             apiUrl = "/api/send-email";
           } else if (window.location.hostname.includes("render")) {
-            apiUrl = "/api/v1/send-email"; // Render verwendet /api/v1/
+            apiUrl = "michael-mi-portfolio.vercel.app/api/send-email"; // Render verwendet /api/v1/
           } else {
             apiUrl = "http://localhost:4000/send-email";
           }
@@ -355,7 +355,7 @@
           console.log("Sende an:", apiUrl);
 
           const response = await fetch(apiUrl, {
-            /* Local auf localhost:${PORT}/ */ method: "POST",
+            method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
