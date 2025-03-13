@@ -63,6 +63,7 @@ If you have any questions or want to collaborate, feel free to reach out via the
 - The contact form may have delays in sending emails due to server limitations.
 - Some minor styling issues may occur on very small screens.
 - The interactive menu may not function perfectly on older browsers.
+- Contact form is not working
 
 ## License
 
