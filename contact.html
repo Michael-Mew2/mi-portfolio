@@ -343,22 +343,18 @@
         console.log(jsonData);
 
         try {
-          const isLocalhost = ["localhost", "127.0.0.1"].includes(
-            window.location.hostname
-          );
+          let apiUrl;
+          if (window.location.hostname.includes("vercel")) {
+            apiUrl = "/api/send-email";
+          } else if (window.location.hostname.includes("render")) {
+            apiUrl = "/api/v1/send-email"; // Render verwendet /api/v1/
+          } else {
+            apiUrl = "http://localhost:4000/send-email";
+          }
 
-          const sendVia =
-            typeof process !== "undefined" && process.env?.NEXT_PUBLIC_API_URL
-              ? process.env.NEXT_PUBLIC_API_URL
-              : isLocalhost
-              ? "http://localhost:4000/send-email"
-              : window.location.hostname.includes("vercel.app")
-              ? "/api/send-email"
-              : "michael-mi-portfolio.vercel.app/api/send-email";
+          console.log("Sende an:", apiUrl);
 
-          console.log("Sende an:", sendVia);
-
-          const response = await fetch(sendVia, {
+          const response = await fetch(apiUrl, {
             /* Local auf localhost:${PORT}/ */ method: "POST",
             headers: {
               "Content-Type": "application/json",
