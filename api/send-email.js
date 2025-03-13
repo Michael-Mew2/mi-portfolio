@@ -1,6 +1,11 @@
 import nodemailer from "nodemailer";
 
 export default async function (req, res) {
+  // CORS-Konfiguration für beide Umgebungen
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
@@ -21,8 +26,8 @@ export default async function (req, res) {
       to: email,
       bcc: [process.env.COPY, process.env.EMAIL],
       subject: `Hi ${fname} ${lname} - Thank you for reaching out to me 😃`,
-            text: `Moin (northern-german for "hi) ${fname} ${lname}, Thank you so much for getting in touch! I’ve received your message and will get back to you shortly. Here’s a quick look at the details you shared, just to keep everything transparent; Name: ${fname} ${lname}, company: ${company}, Phone Number: ${tel}, Email: ${email}, (Method: ${method}), Message: ${reason}. II’ll get back to you within a day or two, but if anything above needs correcting, please feel free to reach me directly at contact.michaels.website@gmail.com. Thanks again, and I look forward to connecting with you soon! Best regards Michael`,
-            html: `
+      text: `Moin (northern-german for "hi) ${fname} ${lname}, Thank you so much for getting in touch! I’ve received your message and will get back to you shortly. Here’s a quick look at the details you shared, just to keep everything transparent; Name: ${fname} ${lname}, company: ${company}, Phone Number: ${tel}, Email: ${email}, (Method: ${method}), Message: ${reason}. II’ll get back to you within a day or two, but if anything above needs correcting, please feel free to reach me directly at contact.michaels.website@gmail.com. Thanks again, and I look forward to connecting with you soon! Best regards Michael`,
+      html: `
             <h2>Moin* ${fname} ${lname},</h2>
             <p>Thank you so much for getting in touch! I’ve received your message and will get back to you shortly. Here’s a quick look at the details you shared, just to keep everything transparent:</p>
             <ul>
