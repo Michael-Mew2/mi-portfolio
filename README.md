@@ -59,11 +59,12 @@ If you have any questions or want to collaborate, feel free to reach out via the
 - Integrated contact form using Nodemailer.
 - Styled the website using SCSS.
 - Updated "my projects"-list with current and latest projects
+- Contact form is now working
 ### Known Issues
 - The contact form may have delays in sending emails due to server limitations.
 - Some minor styling issues may occur on very small screens.
 - The interactive menu may not function perfectly on older browsers.
-- Contact form is not working
+- Isn't working on render 
 
 ## License
 
