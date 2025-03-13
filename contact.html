@@ -108,22 +108,46 @@
       <section class="content__contact">
         <div class="content">
           <p class="clr__white">
-            Let’s connect! If you have a question, a project idea, or even a job or internship opportunity, I’d love to hear from you. Feel free to reach out here, or connect with me on LinkedIn, Xing, Github or Behance (it’s a little empty right now, but stay tuned—more is coming soon!). Looking forward to connecting!
+            Let’s connect! If you have a question, a project idea, or even a job
+            or internship opportunity, I’d love to hear from you. Feel free to
+            reach out here, or connect with me on LinkedIn, Xing, Github or
+            Behance (it’s a little empty right now, but stay tuned—more is
+            coming soon!). Looking forward to connecting!
           </p>
           <div class="socials socials__clear">
-            <a href="https://github.com/Michael-Mew2" class="btn__social" target="_blank" aria-label="This button brings you to my Github-account">
+            <a
+              href="https://github.com/Michael-Mew2"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my Github-account"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="https://www.linkedin.com/in/michael-marques-das-neves/" class="btn__social" target="_blank" aria-label="This button brings you to my LinkedIn-account">
+            <a
+              href="https://www.linkedin.com/in/michael-marques-das-neves/"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my LinkedIn-account"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
 
-            <a href="https://www.xing.com/profile/Michael_MarquesdasNeves" class="btn__social" target="_blank" aria-label="This button brings you to my Xing-account">
+            <a
+              href="https://www.xing.com/profile/Michael_MarquesdasNeves"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my Xing-account"
+            >
               <i class="fa-brands fa-xing"></i>
             </a>
 
-            <a href="https://www.behance.net/michaeldasneves" class="btn__social" target="_blank" aria-label="This button brings you to my empty Behance-account">
+            <a
+              href="https://www.behance.net/michaeldasneves"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my empty Behance-account"
+            >
               <i class="fa-brands fa-behance"></i>
             </a>
           </div>
@@ -268,19 +292,39 @@
               <i class="fa-solid fa-bone"></i>
             </a> -->
 
-            <a href="https://github.com/Michael-Mew2" class="btn__social" target="_blank" aria-label="This button brings you to my Github-account">
+            <a
+              href="https://github.com/Michael-Mew2"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my Github-account"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="https://www.linkedin.com/in/michael-marques-das-neves/" class="btn__social" target="_blank" aria-label="This button brings you to my LinkedIn-account">
+            <a
+              href="https://www.linkedin.com/in/michael-marques-das-neves/"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my LinkedIn-account"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
 
-            <a href="https://www.xing.com/profile/Michael_MarquesdasNeves" class="btn__social" target="_blank" aria-label="This button brings you to my Xing-account">
+            <a
+              href="https://www.xing.com/profile/Michael_MarquesdasNeves"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my Xing-account"
+            >
               <i class="fa-brands fa-xing"></i>
             </a>
 
-            <a href="https://www.behance.net/michaeldasneves" class="btn__social" target="_blank"  aria-label="This button brings you to my empty Behance-account">
+            <a
+              href="https://www.behance.net/michaeldasneves"
+              class="btn__social"
+              target="_blank"
+              aria-label="This button brings you to my empty Behance-account"
+            >
               <i class="fa-brands fa-behance"></i>
             </a>
           </div>
@@ -289,37 +333,49 @@
     </footer>
 
     <script>
-
       const form = document.getElementById("contactForm");
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = new FormData(form);
-        const jsonData = Object.fromEntries((formData.entries()));
+        const jsonData = Object.fromEntries(formData.entries());
 
         console.log(jsonData);
-        
+
         try {
-            const PORT = 4000;
-            const response = await fetch(`/api/send-email`, { /* Local auf localhost:${PORT}/ */
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(jsonData),
-            });
+          const isLocalhost = ["localhost", "127.0.0.1"].includes(
+            window.location.hostname
+          );
 
-            if(!response.ok) {
-                throw new Error ("Connection failed:", response.status)
-            }
+          const sendVia =
+            typeof process !== "undefined" && process.env?.NEXT_PUBLIC_API_URL
+              ? process.env.NEXT_PUBLIC_API_URL
+              : isLocalhost
+              ? "http://localhost:4000"
+              : "/api/send-email";
 
-            const result = await response.json()
-            console.log(result);
-            alert(`Thank you, you will recive a confirmation e-mail with all the data you filled out on here very soon. (Please don't forget to look into your spam-folder, sometimes it unfortunately lands in there)`)
-            window.location.reload();
+          console.log("Sende an:", sendVia);
+
+          const response = await fetch(sendVia, {
+            /* Local auf localhost:${PORT}/ */ method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(jsonData),
+          });
+
+          if (!response.ok) {
+            throw new Error("Connection failed:", response.status);
+          }
+
+          const result = await response.json();
+          console.log(result);
+          alert(
+            `Thank you, you will recive a confirmation e-mail with all the data you filled out on here very soon. (Please don't forget to look into your spam-folder, sometimes it unfortunately lands in there)`
+          );
+          window.location.reload();
         } catch (error) {
-            console.error("Error:", error);
-            
+          console.error("Error:", error);
         }
       });
     </script>
