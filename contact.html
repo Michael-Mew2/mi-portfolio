@@ -353,7 +353,7 @@
               : isLocalhost
               ? "http://localhost:4000/send-email"
               : window.location.hostname.includes("vercel.app")
-              ? "https://dein-vercel-projekt.vercel.app/api/send-email"
+              ? "/api/send-email"
               : "https://dein-render-backend.onrender.com/api/send-email";
 
           console.log("Sende an:", sendVia);
