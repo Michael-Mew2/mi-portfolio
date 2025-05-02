@@ -10,10 +10,20 @@
 
 .skills {
     margin: auto;
-            
+
+    &:nth-of-type(6) {
+        rotate: -0.9deg;
+        @include color_skill_group($popel_main, $clr_white)
+    }
+
+    &:nth-of-type(5) {
+        rotate: 0.8deg;
+        @include color_skill_group($salty_main, $clr_white)
+    }
+        
     &:nth-of-type(1) {
         rotate: 1.2deg;
-        @include color_skill_group ($salty_main, $clr_white);
+        @include color_skill_group($salty_main, $clr_white);
     }
 
     &:nth-of-type(2) {
