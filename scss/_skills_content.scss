@@ -44,7 +44,7 @@
 }
 
 .skills__part-two {
-    > &:nth-child(1) {
+    &:nth-child(1) {
         rotate: -2deg;
         @include color_skill_group ($blushing_main, $clr_white)
 
@@ -67,49 +67,170 @@
 // HTML
 .skill__pc__html {
     rotate: -0.3deg;
-    @include choose_progress (pc_html, 80%, $teeth_main, $teeth_dark)
+    @include choose_progress (pc_html, 60%, $teeth_main, $teeth_dark)
 }
 
 // CSS
 .skill__pc__css {
     rotate: 0.6deg;
-    @include choose_progress (pc_css, 80%, $salty_main, $salty_dark)
-}
-
-// SCSS
-.skill__pc__scss {
-    rotate: -0.7deg;
-    @include choose_progress(pc_scss, 70%, $blushing_main, $blushing_dark)
-}
-
-// Node
-.skill__pc__node {
-    rotate: 0.5deg;
-    @include choose_progress(pc_node, 60%, $popel_main, $popel_dark)
+    @include choose_progress (pc_css, 60%, $salty_main, $salty_dark)
 }
 
 // JS
 .skill__pc__js {
     rotate: -0.8deg;
-    @include choose_progress(pc_js, 70%, $teeth_main, $teeth_dark)
+    @include choose_progress(pc_js, 60%, $popel_main, $popel_dark)
+}
+
+.skill__pc__ts {
+    rotate: 0.3deg;
+    @include choose_progress(pc_ts, 10%, $blushing_main, $blushing_dark)
+}
+
+// -- *Styling*
+// SCSS
+.skill__pc__scss {
+    rotate: 0.7deg;
+    @include choose_progress(pc_scss, 60%, $blushing_main, $blushing_dark)
+}
+
+// bootstrap
+.skill__pc__bootstrap {
+    rotate: -0.3deg;
+    @include choose_progress(pc_bootstrap, 40%, $teeth_main, $teeth_dark)
+}
+
+// Tailwind
+.skill__pc__tailwind {
+    rotate: 0.2deg;
+    @include choose_progress(pc_tailwind, 40%, $salty_main, $salty_dark)
+}
+
+// mantine
+.skill__pc__mantine {
+    rotate: -0.6deg;
+    @include choose_progress(pc_mantine, 40%, $popel_main, $popel_dark)
+}
+
+// MaterialUI
+.skill__pc__materialui {
+    rotate: 0.4deg;
+    @include choose_progress(pc_materialui, 40%, $blushing_main, $blushing_dark)
+}
+// -- *Datenbanken*
+// MongoDB
+.skill__pc__mongo {
+    rotate: -0.5deg;
+    @include choose_progress(pc_mongo, 60%, $popel_main, $popel_dark)
+}
+
+// MS Access
+.skill__ms__acc {
+    rotate: 0.4deg;
+    @include choose_progress(ms_acc, 60%, $blushing_main, $blushing_dark)
+}
+
+// SQL
+.skill__sql {
+    rotate: -0.7deg;
+    @include choose_progress(pc_sql, 10%, $teeth_main, $teeth_dark)
+}
+
+// -- *Frameworks*
+// git
+.skill__pc__git {
+    rotate: 0.5deg;
+    @include choose_progress(pc_git, 60%, $salty_main, $salty_dark)
 }
 
 // React
 .skill__pc__react {
-    rotate: 0.7deg;
-    @include choose_progress(pc_rt, 70%, $salty_main, $salty_dark)
+    rotate: -0.7deg;
+    @include choose_progress(pc_rt, 60%, $popel_main, $popel_dark)
+}
+
+// Node
+.skill__pc__node {
+    rotate: 0.2deg;
+    @include choose_progress(pc_node, 60%, $blushing_main, $blushing_dark)
+}
+
+// nodemon
+.skill__pc__nodemon {
+    rotate: -0.7deg;
+    @include choose_progress(pc_nodemon, 60%, $teeth_main, $teeth_dark)
 }
 
 // Express
 .skill__pc__express {
-    rotate: -0.4deg;
-    @include choose_progress(pc_ex, 45%, $blushing_main, $blushing_dark)
+    rotate: 0.4deg;
+    @include choose_progress(pc_ex, 60%, $salty_main, $salty_dark)
 }
 
-// MongoDB
-.skill__pc__mongo {
-    rotate: 0.5deg;
-    @include choose_progress(pc_mongo, 35%, $popel_main, $popel_dark)
+// RESTful API
+.skill__pc__rest {
+    rotate: -0.9deg;
+    @include choose_progress(pc_rest, 60%, $popel_main, $popel_dark)
+}
+
+// npm
+.skill__pc__npm {
+    rotate: 0.2deg;
+    @include choose_progress(pc_npm, 40%, $blushing_main, $blushing_dark)
+}
+
+// jwt
+.skill__pc__jwt {
+    rotate: -0.4deg;
+    @include choose_progress(pc_jwt, 40%, $teeth_main, $teeth_dark)
+}
+
+// react router
+.skill__pc__reactRouter {
+    rotate: 0.6deg;
+    @include choose_progress(pc_reactRouter, 40%, $salty_main, $salty_dark)
+}
+
+// github
+.skill__pc__github {
+    rotate: -0.3deg;
+    @include choose_progress(pc_github, 40%, $popel_main, $popel_dark)
+}
+
+// mongoose
+.skill__pc__mongoose {
+    rotate: 0.2deg;
+    @include choose_progress(pc_mongoose, 40%, $blushing_main, $blushing_dark)
+}
+
+// socket.io
+.skill__pc__socketio {
+    rotate: -0.5deg;
+    @include choose_progress(pc_socketio, 20%, $teeth_main, $teeth_dark)
+}
+
+// konva
+.skill__pc__konva {
+    rotate: 0.7deg;
+    @include choose_progress(pc_konva, 20%, $salty_main, $salty_dark)
+}
+
+// socket.io
+.skill__pc__insomnia {
+    rotate: -0.3deg;
+    @include choose_progress(pc_insomnia, 20%, $popel_main, $popel_dark)
+}
+
+// postman
+.skill__pc__postman {
+    rotate: 0.2deg;
+    @include choose_progress(pc_postman, 20%, $blushing_main, $blushing_dark)
+}
+
+// docker
+.skill__pc__docker {
+    rotate: -0.8deg;
+    @include choose_progress(pc_docker, 10%, $teeth_main, $teeth_dark)
 }
 
 // ----------
@@ -121,49 +242,49 @@
 // Strategic Marketing
 .skill__bwl__strm {
     rotate: 1.5deg;
-    @include choose_progress(bwl_strm, 100%, $blushing_main, $blushing_dark)
+    @include choose_progress(bwl_strm, 100%, $teeth_main, $teeth_dark)
 }
 
 // International Marketing 
 .skill__bwl__intm {
     rotate: -0.7deg;
-    @include choose_progress(bwl_intm, 100%, $popel_main, $popel_dark)
+    @include choose_progress(bwl_intm, 100%, $salty_main, $salty_dark)
 }
 
 // Business Process Modelling
 .skill__bwl__model {
     rotate: 1.3deg;
-    @include choose_progress(bwl_model, 100%, $teeth_main, $teeth_dark)
+    @include choose_progress(bwl_model, 100%, $popel_main, $popel_dark)
 }
 
 // E-Commerce
 .skill__bwl__ecom {
     rotate: -1.0deg;
-    @include choose_progress(bwl_ecom, 80%, $salty_main, $salty_dark)
+    @include choose_progress(bwl_ecom, 80%, $blushing_main, $blushing_dark)
 }
 
 // CRM
 .skill__bwl__crm {
     rotate: 1.2deg;
-    @include choose_progress(bwl_crm, 60%, $blushing_main, $blushing_dark)
+    @include choose_progress(bwl_crm, 60%, $teeth_main, $teeth_dark)
 }
 
 // Entrepreneurship
 .skill__bwl__ent {
     rotate: -1.2deg;
-    @include choose_progress(bwl_ent, 100%, $popel_main, $popel_dark)
+    @include choose_progress(bwl_ent, 100%, $salty_main, $salty_dark)
 }
 
 // Investment
 .skill__bwl__inv {
     rotate: 1.2deg;
-    @include choose_progress(bwl_inv, 80%, $teeth_main, $teeth_dark)
+    @include choose_progress(bwl_inv, 80%, $popel_main, $popel_dark)
 }
 
 // Controlling
 .skill__bwl__cont {
     rotate: -1.5deg;
-    @include choose_progress(bwl_cont, 40%, $salty_main, $salty_dark)
+    @include choose_progress(bwl_cont, 40%, $blushing_main, $blushing_dark)
 }
 
 // ----------
@@ -264,12 +385,6 @@
 .skill__ms__wd {
     rotate: -1.5deg;
     @include choose_progress (ms_wd, 100%, $teeth_main, $teeth_dark)
-}
-
-// access
-.skill__ms__acc {
-    rotate: 1.8deg;
-    @include choose_progress (ms_acc, 75%, $blushing_main, $blushing_dark);
 }
 
 // project

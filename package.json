@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon --env-file=.env contact.js",
     "start": "node contact.js",
-    "build":"sass scss/main.scss css/styles.css",
+    "build": "sass scss/main.scss css/styles.css",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.75.0"
+    "sass": "^1.87.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
