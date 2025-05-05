@@ -1302,6 +1302,22 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 .skills {
   margin: auto;
 }
+.skills:nth-of-type(6) {
+  rotate: -0.9deg;
+  background-color: #71DE75;
+  color: #fffffa;
+}
+.skills:nth-of-type(6) > p {
+  color: #fffffa;
+}
+.skills:nth-of-type(5) {
+  rotate: 0.8deg;
+  background-color: #479AE6;
+  color: #fffffa;
+}
+.skills:nth-of-type(5) > p {
+  color: #fffffa;
+}
 .skills:nth-of-type(1) {
   rotate: 1.2deg;
   background-color: #479AE6;
@@ -1335,12 +1351,12 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   color: #fffffa;
 }
 
-> .skills__part-two:nth-child(1) {
+.skills__part-two:nth-child(1) {
   rotate: -2deg;
   background-color: #CE4C8A;
   color: #fffffa;
 }
-> .skills__part-two:nth-child(1) > p {
+.skills__part-two:nth-child(1) > p {
   color: #fffffa;
 }
 
@@ -1352,7 +1368,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: -0.3deg;
 }
 .skill__pc__html .progress-moved .progress__bar {
-  width: 80%;
+  width: 60%;
   background-color: #F6D339;
   animation-name: pc_html;
   animation-duration: 6s;
@@ -1363,7 +1379,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #CAAE2F;
   }
   100% {
-    width: 80%;
+    width: 60%;
     background-color: #F6D339;
   } /* Ziel */
 }
@@ -1372,7 +1388,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: 0.6deg;
 }
 .skill__pc__css .progress-moved .progress__bar {
-  width: 80%;
+  width: 60%;
   background-color: #479AE6;
   animation-name: pc_css;
   animation-duration: 6s;
@@ -1383,16 +1399,56 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #2F6699;
   }
   100% {
-    width: 80%;
+    width: 60%;
     background-color: #479AE6;
   } /* Ziel */
 }
 
+.skill__pc__js {
+  rotate: -0.8deg;
+}
+.skill__pc__js .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #71DE75;
+  animation-name: pc_js;
+  animation-duration: 6s;
+}
+@keyframes pc_js {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 60%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__pc__ts {
+  rotate: 0.3deg;
+}
+.skill__pc__ts .progress-moved .progress__bar {
+  width: 10%;
+  background-color: #CE4C8A;
+  animation-name: pc_ts;
+  animation-duration: 6s;
+}
+@keyframes pc_ts {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 10%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
 .skill__pc__scss {
-  rotate: -0.7deg;
+  rotate: 0.7deg;
 }
 .skill__pc__scss .progress-moved .progress__bar {
-  width: 70%;
+  width: 60%;
   background-color: #CE4C8A;
   animation-name: pc_scss;
   animation-duration: 6s;
@@ -1403,96 +1459,96 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #A43D6F;
   }
   100% {
-    width: 70%;
+    width: 60%;
     background-color: #CE4C8A;
   } /* Ziel */
 }
 
-.skill__pc__node {
-  rotate: 0.5deg;
+.skill__pc__bootstrap {
+  rotate: -0.3deg;
 }
-.skill__pc__node .progress-moved .progress__bar {
-  width: 60%;
-  background-color: #71DE75;
-  animation-name: pc_node;
-  animation-duration: 6s;
-}
-@keyframes pc_node {
-  0% {
-    width: 5%;
-    background-color: #5BB35E;
-  }
-  100% {
-    width: 60%;
-    background-color: #71DE75;
-  } /* Ziel */
-}
-
-.skill__pc__js {
-  rotate: -0.8deg;
-}
-.skill__pc__js .progress-moved .progress__bar {
-  width: 70%;
+.skill__pc__bootstrap .progress-moved .progress__bar {
+  width: 40%;
   background-color: #F6D339;
-  animation-name: pc_js;
+  animation-name: pc_bootstrap;
   animation-duration: 6s;
 }
-@keyframes pc_js {
+@keyframes pc_bootstrap {
   0% {
     width: 5%;
     background-color: #CAAE2F;
   }
   100% {
-    width: 70%;
+    width: 40%;
     background-color: #F6D339;
   } /* Ziel */
 }
 
-.skill__pc__react {
-  rotate: 0.7deg;
+.skill__pc__tailwind {
+  rotate: 0.2deg;
 }
-.skill__pc__react .progress-moved .progress__bar {
-  width: 70%;
+.skill__pc__tailwind .progress-moved .progress__bar {
+  width: 40%;
   background-color: #479AE6;
-  animation-name: pc_rt;
+  animation-name: pc_tailwind;
   animation-duration: 6s;
 }
-@keyframes pc_rt {
+@keyframes pc_tailwind {
   0% {
     width: 5%;
     background-color: #2F6699;
   }
   100% {
-    width: 70%;
+    width: 40%;
     background-color: #479AE6;
   } /* Ziel */
 }
 
-.skill__pc__express {
-  rotate: -0.4deg;
+.skill__pc__mantine {
+  rotate: -0.6deg;
 }
-.skill__pc__express .progress-moved .progress__bar {
-  width: 45%;
-  background-color: #CE4C8A;
-  animation-name: pc_ex;
+.skill__pc__mantine .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #71DE75;
+  animation-name: pc_mantine;
   animation-duration: 6s;
 }
-@keyframes pc_ex {
+@keyframes pc_mantine {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 40%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__pc__materialui {
+  rotate: 0.4deg;
+}
+.skill__pc__materialui .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #CE4C8A;
+  animation-name: pc_materialui;
+  animation-duration: 6s;
+}
+@keyframes pc_materialui {
   0% {
     width: 5%;
     background-color: #A43D6F;
   }
   100% {
-    width: 45%;
+    width: 40%;
     background-color: #CE4C8A;
   } /* Ziel */
 }
 
 .skill__pc__mongo {
-  rotate: 0.5deg;
+  rotate: -0.5deg;
 }
 .skill__pc__mongo .progress-moved .progress__bar {
-  width: 35%;
+  width: 60%;
   background-color: #71DE75;
   animation-name: pc_mongo;
   animation-duration: 6s;
@@ -1503,101 +1559,21 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #5BB35E;
   }
   100% {
-    width: 35%;
+    width: 60%;
     background-color: #71DE75;
   } /* Ziel */
 }
 
-.skill__bwl__strm {
-  rotate: 1.5deg;
+.skill__ms__acc {
+  rotate: 0.4deg;
 }
-.skill__bwl__strm .progress-moved .progress__bar {
-  width: 100%;
-  background-color: #CE4C8A;
-  animation-name: bwl_strm;
-  animation-duration: 6s;
-}
-@keyframes bwl_strm {
-  0% {
-    width: 5%;
-    background-color: #A43D6F;
-  }
-  100% {
-    width: 100%;
-    background-color: #CE4C8A;
-  } /* Ziel */
-}
-
-.skill__bwl__intm {
-  rotate: -0.7deg;
-}
-.skill__bwl__intm .progress-moved .progress__bar {
-  width: 100%;
-  background-color: #71DE75;
-  animation-name: bwl_intm;
-  animation-duration: 6s;
-}
-@keyframes bwl_intm {
-  0% {
-    width: 5%;
-    background-color: #5BB35E;
-  }
-  100% {
-    width: 100%;
-    background-color: #71DE75;
-  } /* Ziel */
-}
-
-.skill__bwl__model {
-  rotate: 1.3deg;
-}
-.skill__bwl__model .progress-moved .progress__bar {
-  width: 100%;
-  background-color: #F6D339;
-  animation-name: bwl_model;
-  animation-duration: 6s;
-}
-@keyframes bwl_model {
-  0% {
-    width: 5%;
-    background-color: #CAAE2F;
-  }
-  100% {
-    width: 100%;
-    background-color: #F6D339;
-  } /* Ziel */
-}
-
-.skill__bwl__ecom {
-  rotate: -1deg;
-}
-.skill__bwl__ecom .progress-moved .progress__bar {
-  width: 80%;
-  background-color: #479AE6;
-  animation-name: bwl_ecom;
-  animation-duration: 6s;
-}
-@keyframes bwl_ecom {
-  0% {
-    width: 5%;
-    background-color: #2F6699;
-  }
-  100% {
-    width: 80%;
-    background-color: #479AE6;
-  } /* Ziel */
-}
-
-.skill__bwl__crm {
-  rotate: 1.2deg;
-}
-.skill__bwl__crm .progress-moved .progress__bar {
+.skill__ms__acc .progress-moved .progress__bar {
   width: 60%;
   background-color: #CE4C8A;
-  animation-name: bwl_crm;
+  animation-name: ms_acc;
   animation-duration: 6s;
 }
-@keyframes bwl_crm {
+@keyframes ms_acc {
   0% {
     width: 5%;
     background-color: #A43D6F;
@@ -1608,16 +1584,396 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   } /* Ziel */
 }
 
-.skill__bwl__ent {
-  rotate: -1.2deg;
+.skill__sql {
+  rotate: -0.7deg;
 }
-.skill__bwl__ent .progress-moved .progress__bar {
-  width: 100%;
-  background-color: #71DE75;
-  animation-name: bwl_ent;
+.skill__sql .progress-moved .progress__bar {
+  width: 10%;
+  background-color: #F6D339;
+  animation-name: pc_sql;
   animation-duration: 6s;
 }
-@keyframes bwl_ent {
+@keyframes pc_sql {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 10%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__pc__git {
+  rotate: 0.5deg;
+}
+.skill__pc__git .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #479AE6;
+  animation-name: pc_git;
+  animation-duration: 6s;
+}
+@keyframes pc_git {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 60%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__pc__react {
+  rotate: -0.7deg;
+}
+.skill__pc__react .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #71DE75;
+  animation-name: pc_rt;
+  animation-duration: 6s;
+}
+@keyframes pc_rt {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 60%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__pc__node {
+  rotate: 0.2deg;
+}
+.skill__pc__node .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #CE4C8A;
+  animation-name: pc_node;
+  animation-duration: 6s;
+}
+@keyframes pc_node {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 60%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__pc__nodemon {
+  rotate: -0.7deg;
+}
+.skill__pc__nodemon .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #F6D339;
+  animation-name: pc_nodemon;
+  animation-duration: 6s;
+}
+@keyframes pc_nodemon {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 60%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__pc__express {
+  rotate: 0.4deg;
+}
+.skill__pc__express .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #479AE6;
+  animation-name: pc_ex;
+  animation-duration: 6s;
+}
+@keyframes pc_ex {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 60%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__pc__rest {
+  rotate: -0.9deg;
+}
+.skill__pc__rest .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #71DE75;
+  animation-name: pc_rest;
+  animation-duration: 6s;
+}
+@keyframes pc_rest {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 60%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__pc__npm {
+  rotate: 0.2deg;
+}
+.skill__pc__npm .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #CE4C8A;
+  animation-name: pc_npm;
+  animation-duration: 6s;
+}
+@keyframes pc_npm {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 40%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__pc__jwt {
+  rotate: -0.4deg;
+}
+.skill__pc__jwt .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #F6D339;
+  animation-name: pc_jwt;
+  animation-duration: 6s;
+}
+@keyframes pc_jwt {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 40%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__pc__reactRouter {
+  rotate: 0.6deg;
+}
+.skill__pc__reactRouter .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #479AE6;
+  animation-name: pc_reactRouter;
+  animation-duration: 6s;
+}
+@keyframes pc_reactRouter {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 40%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__pc__github {
+  rotate: -0.3deg;
+}
+.skill__pc__github .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #71DE75;
+  animation-name: pc_github;
+  animation-duration: 6s;
+}
+@keyframes pc_github {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 40%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__pc__mongoose {
+  rotate: 0.2deg;
+}
+.skill__pc__mongoose .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #CE4C8A;
+  animation-name: pc_mongoose;
+  animation-duration: 6s;
+}
+@keyframes pc_mongoose {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 40%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__pc__socketio {
+  rotate: -0.5deg;
+}
+.skill__pc__socketio .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #F6D339;
+  animation-name: pc_socketio;
+  animation-duration: 6s;
+}
+@keyframes pc_socketio {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 20%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__pc__konva {
+  rotate: 0.7deg;
+}
+.skill__pc__konva .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #479AE6;
+  animation-name: pc_konva;
+  animation-duration: 6s;
+}
+@keyframes pc_konva {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 20%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__pc__insomnia {
+  rotate: -0.3deg;
+}
+.skill__pc__insomnia .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #71DE75;
+  animation-name: pc_insomnia;
+  animation-duration: 6s;
+}
+@keyframes pc_insomnia {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 20%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__pc__postman {
+  rotate: 0.2deg;
+}
+.skill__pc__postman .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #CE4C8A;
+  animation-name: pc_postman;
+  animation-duration: 6s;
+}
+@keyframes pc_postman {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 20%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__pc__docker {
+  rotate: -0.8deg;
+}
+.skill__pc__docker .progress-moved .progress__bar {
+  width: 10%;
+  background-color: #F6D339;
+  animation-name: pc_docker;
+  animation-duration: 6s;
+}
+@keyframes pc_docker {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 10%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__bwl__strm {
+  rotate: 1.5deg;
+}
+.skill__bwl__strm .progress-moved .progress__bar {
+  width: 100%;
+  background-color: #F6D339;
+  animation-name: bwl_strm;
+  animation-duration: 6s;
+}
+@keyframes bwl_strm {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 100%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__bwl__intm {
+  rotate: -0.7deg;
+}
+.skill__bwl__intm .progress-moved .progress__bar {
+  width: 100%;
+  background-color: #479AE6;
+  animation-name: bwl_intm;
+  animation-duration: 6s;
+}
+@keyframes bwl_intm {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 100%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__bwl__model {
+  rotate: 1.3deg;
+}
+.skill__bwl__model .progress-moved .progress__bar {
+  width: 100%;
+  background-color: #71DE75;
+  animation-name: bwl_model;
+  animation-duration: 6s;
+}
+@keyframes bwl_model {
   0% {
     width: 5%;
     background-color: #5BB35E;
@@ -1628,23 +1984,83 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   } /* Ziel */
 }
 
+.skill__bwl__ecom {
+  rotate: -1deg;
+}
+.skill__bwl__ecom .progress-moved .progress__bar {
+  width: 80%;
+  background-color: #CE4C8A;
+  animation-name: bwl_ecom;
+  animation-duration: 6s;
+}
+@keyframes bwl_ecom {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 80%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__bwl__crm {
+  rotate: 1.2deg;
+}
+.skill__bwl__crm .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #F6D339;
+  animation-name: bwl_crm;
+  animation-duration: 6s;
+}
+@keyframes bwl_crm {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 60%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__bwl__ent {
+  rotate: -1.2deg;
+}
+.skill__bwl__ent .progress-moved .progress__bar {
+  width: 100%;
+  background-color: #479AE6;
+  animation-name: bwl_ent;
+  animation-duration: 6s;
+}
+@keyframes bwl_ent {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 100%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
 .skill__bwl__inv {
   rotate: 1.2deg;
 }
 .skill__bwl__inv .progress-moved .progress__bar {
   width: 80%;
-  background-color: #F6D339;
+  background-color: #71DE75;
   animation-name: bwl_inv;
   animation-duration: 6s;
 }
 @keyframes bwl_inv {
   0% {
     width: 5%;
-    background-color: #CAAE2F;
+    background-color: #5BB35E;
   }
   100% {
     width: 80%;
-    background-color: #F6D339;
+    background-color: #71DE75;
   } /* Ziel */
 }
 
@@ -1653,18 +2069,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__bwl__cont .progress-moved .progress__bar {
   width: 40%;
-  background-color: #479AE6;
+  background-color: #CE4C8A;
   animation-name: bwl_cont;
   animation-duration: 6s;
 }
 @keyframes bwl_cont {
   0% {
     width: 5%;
-    background-color: #2F6699;
+    background-color: #A43D6F;
   }
   100% {
     width: 40%;
-    background-color: #479AE6;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -1693,18 +2109,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__lan__por .progress-moved .progress__bar {
   width: 100%;
-  background-color: #479AE6;
+  background-color: #CE4C8A;
   animation-name: lan_por;
   animation-duration: 6s;
 }
 @keyframes lan_por {
   0% {
     width: 5%;
-    background-color: #2F6699;
+    background-color: #A43D6F;
   }
   100% {
     width: 100%;
-    background-color: #479AE6;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -1733,18 +2149,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__lan__esp .progress-moved .progress__bar {
   width: 66.67%;
-  background-color: #CE4C8A;
+  background-color: #479AE6;
   animation-name: lan_esp;
   animation-duration: 6s;
 }
 @keyframes lan_esp {
   0% {
     width: 5%;
-    background-color: #A43D6F;
+    background-color: #2F6699;
   }
   100% {
     width: 66.67%;
-    background-color: #CE4C8A;
+    background-color: #479AE6;
   } /* Ziel */
 }
 
@@ -1773,18 +2189,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__lan__chn .progress-moved .progress__bar {
   width: 0%;
-  background-color: #479AE6;
+  background-color: #CE4C8A;
   animation-name: lan_chn;
   animation-duration: 6s;
 }
 @keyframes lan_chn {
   0% {
     width: 5%;
-    background-color: #2F6699;
+    background-color: #A43D6F;
   }
   100% {
     width: 0%;
-    background-color: #479AE6;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -1948,26 +2364,6 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   } /* Ziel */
 }
 
-.skill__ms__acc {
-  rotate: 1.8deg;
-}
-.skill__ms__acc .progress-moved .progress__bar {
-  width: 75%;
-  background-color: #CE4C8A;
-  animation-name: ms_acc;
-  animation-duration: 6s;
-}
-@keyframes ms_acc {
-  0% {
-    width: 5%;
-    background-color: #A43D6F;
-  }
-  100% {
-    width: 75%;
-    background-color: #CE4C8A;
-  } /* Ziel */
-}
-
 .skill__ms__prj {
   rotate: -0.5deg;
 }
@@ -1992,19 +2388,19 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: -2deg;
 }
 .skill__adobe__photo .progress-moved .progress__bar {
-  width: 75%;
-  background-color: #CE4C8A;
+  width: 40%;
+  background-color: #F6D339;
   animation-name: adobe_photo;
   animation-duration: 6s;
 }
 @keyframes adobe_photo {
   0% {
     width: 5%;
-    background-color: #A43D6F;
+    background-color: #CAAE2F;
   }
   100% {
-    width: 75%;
-    background-color: #CE4C8A;
+    width: 40%;
+    background-color: #F6D339;
   } /* Ziel */
 }
 
@@ -2012,7 +2408,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: 1.24deg;
 }
 .skill__adobe__indesign .progress-moved .progress__bar {
-  width: 75%;
+  width: 40%;
   background-color: #479AE6;
   animation-name: adobe_indesign;
   animation-duration: 6s;
@@ -2023,7 +2419,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #2F6699;
   }
   100% {
-    width: 75%;
+    width: 40%;
     background-color: #479AE6;
   } /* Ziel */
 }
@@ -2032,19 +2428,19 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: -1.4deg;
 }
 .skill__adobe__illustrator .progress-moved .progress__bar {
-  width: 75%;
-  background-color: #F6D339;
+  width: 40%;
+  background-color: #71DE75;
   animation-name: adobe_illustrator;
   animation-duration: 6s;
 }
 @keyframes adobe_illustrator {
   0% {
     width: 5%;
-    background-color: #CAAE2F;
+    background-color: #5BB35E;
   }
   100% {
-    width: 75%;
-    background-color: #F6D339;
+    width: 40%;
+    background-color: #71DE75;
   } /* Ziel */
 }
 
@@ -2052,19 +2448,19 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: 1.8deg;
 }
 .skill__adobe__xd .progress-moved .progress__bar {
-  width: 50%;
-  background-color: #71DE75;
+  width: 60%;
+  background-color: #CE4C8A;
   animation-name: adobe_xd;
   animation-duration: 6s;
 }
 @keyframes adobe_xd {
   0% {
     width: 5%;
-    background-color: #5BB35E;
+    background-color: #A43D6F;
   }
   100% {
-    width: 50%;
-    background-color: #71DE75;
+    width: 60%;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -2073,18 +2469,218 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__adobe__aftereffects .progress-moved .progress__bar {
   width: 10%;
-  background-color: #CE4C8A;
+  background-color: #F6D339;
   animation-name: adobe_aftereffects;
   animation-duration: 6s;
 }
 @keyframes adobe_aftereffects {
   0% {
     width: 5%;
-    background-color: #A43D6F;
+    background-color: #CAAE2F;
   }
   100% {
     width: 10%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__mk__wix {
+  rotate: 2deg;
+}
+.skill__mk__wix .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #CE4C8A;
+  animation-name: mk_wix;
+  animation-duration: 6s;
+}
+@keyframes mk_wix {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 60%;
     background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__mk__fb {
+  rotate: -1.3deg;
+}
+.skill__mk__fb .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #F6D339;
+  animation-name: mk_fb;
+  animation-duration: 6s;
+}
+@keyframes mk_fb {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 40%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__mk__googleAds {
+  rotate: 1.6deg;
+}
+.skill__mk__googleAds .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #479AE6;
+  animation-name: mk_googleAds;
+  animation-duration: 6s;
+}
+@keyframes mk_googleAds {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 40%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__mk__fb {
+  rotate: -0.9deg;
+}
+.skill__mk__fb .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #71DE75;
+  animation-name: mk_fb;
+  animation-duration: 6s;
+}
+@keyframes mk_fb {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 20%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__cms__wix {
+  rotate: -1.9deg;
+}
+.skill__cms__wix .progress-moved .progress__bar {
+  width: 80%;
+  background-color: #CE4C8A;
+  animation-name: cms_wix;
+  animation-duration: 6s;
+}
+@keyframes cms_wix {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 80%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__cms__ionos {
+  rotate: 1.4deg;
+}
+.skill__cms__ionos .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #F6D339;
+  animation-name: cms_ionos;
+  animation-duration: 6s;
+}
+@keyframes cms_ionos {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 60%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__cms__wordpress {
+  rotate: 0.9deg;
+}
+.skill__cms__wordpress .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #479AE6;
+  animation-name: cms_wordpress;
+  animation-duration: 6s;
+}
+@keyframes cms_wordpress {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 40%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__cms__presta {
+  rotate: 1.6deg;
+}
+.skill__cms__presta .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #71DE75;
+  animation-name: cms_presta;
+  animation-duration: 6s;
+}
+@keyframes cms_presta {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 20%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__cms__magento {
+  rotate: -2.1deg;
+}
+.skill__cms__magento .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #CE4C8A;
+  animation-name: cms_magento;
+  animation-duration: 6s;
+}
+@keyframes cms_magento {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 20%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__cms__joomla {
+  rotate: 1.2deg;
+}
+.skill__cms__joomla .progress-moved .progress__bar {
+  width: 10%;
+  background-color: #F6D339;
+  animation-name: cms_joomla;
+  animation-duration: 6s;
+}
+@keyframes cms_joomla {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 10%;
+    background-color: #F6D339;
   } /* Ziel */
 }
 
