@@ -2109,18 +2109,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__lan__por .progress-moved .progress__bar {
   width: 100%;
-  background-color: #479AE6;
+  background-color: #CE4C8A;
   animation-name: lan_por;
   animation-duration: 6s;
 }
 @keyframes lan_por {
   0% {
     width: 5%;
-    background-color: #2F6699;
+    background-color: #A43D6F;
   }
   100% {
     width: 100%;
-    background-color: #479AE6;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -2149,18 +2149,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__lan__esp .progress-moved .progress__bar {
   width: 66.67%;
-  background-color: #CE4C8A;
+  background-color: #479AE6;
   animation-name: lan_esp;
   animation-duration: 6s;
 }
 @keyframes lan_esp {
   0% {
     width: 5%;
-    background-color: #A43D6F;
+    background-color: #2F6699;
   }
   100% {
     width: 66.67%;
-    background-color: #CE4C8A;
+    background-color: #479AE6;
   } /* Ziel */
 }
 
@@ -2189,18 +2189,18 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__lan__chn .progress-moved .progress__bar {
   width: 0%;
-  background-color: #479AE6;
+  background-color: #CE4C8A;
   animation-name: lan_chn;
   animation-duration: 6s;
 }
 @keyframes lan_chn {
   0% {
     width: 5%;
-    background-color: #2F6699;
+    background-color: #A43D6F;
   }
   100% {
     width: 0%;
-    background-color: #479AE6;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -2388,19 +2388,19 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: -2deg;
 }
 .skill__adobe__photo .progress-moved .progress__bar {
-  width: 75%;
-  background-color: #CE4C8A;
+  width: 40%;
+  background-color: #F6D339;
   animation-name: adobe_photo;
   animation-duration: 6s;
 }
 @keyframes adobe_photo {
   0% {
     width: 5%;
-    background-color: #A43D6F;
+    background-color: #CAAE2F;
   }
   100% {
-    width: 75%;
-    background-color: #CE4C8A;
+    width: 40%;
+    background-color: #F6D339;
   } /* Ziel */
 }
 
@@ -2408,7 +2408,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: 1.24deg;
 }
 .skill__adobe__indesign .progress-moved .progress__bar {
-  width: 75%;
+  width: 40%;
   background-color: #479AE6;
   animation-name: adobe_indesign;
   animation-duration: 6s;
@@ -2419,7 +2419,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #2F6699;
   }
   100% {
-    width: 75%;
+    width: 40%;
     background-color: #479AE6;
   } /* Ziel */
 }
@@ -2428,19 +2428,19 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: -1.4deg;
 }
 .skill__adobe__illustrator .progress-moved .progress__bar {
-  width: 75%;
-  background-color: #F6D339;
+  width: 40%;
+  background-color: #71DE75;
   animation-name: adobe_illustrator;
   animation-duration: 6s;
 }
 @keyframes adobe_illustrator {
   0% {
     width: 5%;
-    background-color: #CAAE2F;
+    background-color: #5BB35E;
   }
   100% {
-    width: 75%;
-    background-color: #F6D339;
+    width: 40%;
+    background-color: #71DE75;
   } /* Ziel */
 }
 
@@ -2448,19 +2448,19 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: 1.8deg;
 }
 .skill__adobe__xd .progress-moved .progress__bar {
-  width: 50%;
-  background-color: #71DE75;
+  width: 60%;
+  background-color: #CE4C8A;
   animation-name: adobe_xd;
   animation-duration: 6s;
 }
 @keyframes adobe_xd {
   0% {
     width: 5%;
-    background-color: #5BB35E;
+    background-color: #A43D6F;
   }
   100% {
-    width: 50%;
-    background-color: #71DE75;
+    width: 60%;
+    background-color: #CE4C8A;
   } /* Ziel */
 }
 
@@ -2469,18 +2469,218 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 .skill__adobe__aftereffects .progress-moved .progress__bar {
   width: 10%;
-  background-color: #CE4C8A;
+  background-color: #F6D339;
   animation-name: adobe_aftereffects;
   animation-duration: 6s;
 }
 @keyframes adobe_aftereffects {
   0% {
     width: 5%;
-    background-color: #A43D6F;
+    background-color: #CAAE2F;
   }
   100% {
     width: 10%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__mk__wix {
+  rotate: 2deg;
+}
+.skill__mk__wix .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #CE4C8A;
+  animation-name: mk_wix;
+  animation-duration: 6s;
+}
+@keyframes mk_wix {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 60%;
     background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__mk__fb {
+  rotate: -1.3deg;
+}
+.skill__mk__fb .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #F6D339;
+  animation-name: mk_fb;
+  animation-duration: 6s;
+}
+@keyframes mk_fb {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 40%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__mk__googleAds {
+  rotate: 1.6deg;
+}
+.skill__mk__googleAds .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #479AE6;
+  animation-name: mk_googleAds;
+  animation-duration: 6s;
+}
+@keyframes mk_googleAds {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 40%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__mk__fb {
+  rotate: -0.9deg;
+}
+.skill__mk__fb .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #71DE75;
+  animation-name: mk_fb;
+  animation-duration: 6s;
+}
+@keyframes mk_fb {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 20%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__cms__wix {
+  rotate: -1.9deg;
+}
+.skill__cms__wix .progress-moved .progress__bar {
+  width: 80%;
+  background-color: #CE4C8A;
+  animation-name: cms_wix;
+  animation-duration: 6s;
+}
+@keyframes cms_wix {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 80%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__cms__ionos {
+  rotate: 1.4deg;
+}
+.skill__cms__ionos .progress-moved .progress__bar {
+  width: 60%;
+  background-color: #F6D339;
+  animation-name: cms_ionos;
+  animation-duration: 6s;
+}
+@keyframes cms_ionos {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 60%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
+.skill__cms__wordpress {
+  rotate: 0.9deg;
+}
+.skill__cms__wordpress .progress-moved .progress__bar {
+  width: 40%;
+  background-color: #479AE6;
+  animation-name: cms_wordpress;
+  animation-duration: 6s;
+}
+@keyframes cms_wordpress {
+  0% {
+    width: 5%;
+    background-color: #2F6699;
+  }
+  100% {
+    width: 40%;
+    background-color: #479AE6;
+  } /* Ziel */
+}
+
+.skill__cms__presta {
+  rotate: 1.6deg;
+}
+.skill__cms__presta .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #71DE75;
+  animation-name: cms_presta;
+  animation-duration: 6s;
+}
+@keyframes cms_presta {
+  0% {
+    width: 5%;
+    background-color: #5BB35E;
+  }
+  100% {
+    width: 20%;
+    background-color: #71DE75;
+  } /* Ziel */
+}
+
+.skill__cms__magento {
+  rotate: -2.1deg;
+}
+.skill__cms__magento .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #CE4C8A;
+  animation-name: cms_magento;
+  animation-duration: 6s;
+}
+@keyframes cms_magento {
+  0% {
+    width: 5%;
+    background-color: #A43D6F;
+  }
+  100% {
+    width: 20%;
+    background-color: #CE4C8A;
+  } /* Ziel */
+}
+
+.skill__cms__joomla {
+  rotate: 1.2deg;
+}
+.skill__cms__joomla .progress-moved .progress__bar {
+  width: 10%;
+  background-color: #F6D339;
+  animation-name: cms_joomla;
+  animation-duration: 6s;
+}
+@keyframes cms_joomla {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 10%;
+    background-color: #F6D339;
   } /* Ziel */
 }
 

@@ -302,7 +302,7 @@
 // Portuguese
 .skill__lan__por {
     rotate: -1.8deg;
-    @include choose_progress (lan_por, 100%, $salty_main, $salty_dark)
+    @include choose_progress (lan_por, 100%, $blushing_main, $blushing_dark)
 }
 
 // English
@@ -314,7 +314,7 @@
 // Spanish
 .skill__lan__esp {
     rotate: -1.5deg;
-    @include choose_progress (lan_esp, 66.67%, $blushing_main, $blushing_dark)
+    @include choose_progress (lan_esp, 66.67%, $salty_main, $salty_dark)
 }
 
 // Italian
@@ -326,7 +326,7 @@
 // Mandarin
 .skill__lan__chn {
     rotate: -0.4deg;
-    @include choose_progress (lan_chn, 0%, $salty_main, $salty_dark)
+    @include choose_progress (lan_chn, 0%, $blushing_main, $blushing_dark)
 }
 
 // ----------
@@ -400,29 +400,91 @@
 // Photoshop
 .skill__adobe__photo {
     rotate: -2deg;
-    @include choose_progress (adobe_photo, 75%, $blushing_main, $blushing_dark)
+    @include choose_progress (adobe_photo, 40%, $teeth_main, $teeth_dark)
 }
 
 .skill__adobe__indesign {
     rotate: 1.24deg;
-    @include choose_progress (adobe_indesign, 75%, $salty_main, $salty_dark)
+    @include choose_progress (adobe_indesign, 40%, $salty_main, $salty_dark)
 }
 
 .skill__adobe__illustrator {
     rotate: -1.4deg;
-    @include choose_progress (adobe_illustrator, 75%, $teeth_main, $teeth_dark)
+    @include choose_progress (adobe_illustrator, 40%, $popel_main, $popel_dark)
 }
 
 .skill__adobe__xd {
     rotate: 1.8deg;
-    @include choose_progress (adobe_xd, 50%, $popel_main, $popel_dark)
+    @include choose_progress (adobe_xd, 60%, $blushing_main, $blushing_dark)
 }
 
 .skill__adobe__aftereffects {
     rotate: -1.2deg;
-    @include choose_progress (adobe_aftereffects, 10%, $blushing_main, $blushing_dark)
+    @include choose_progress (adobe_aftereffects, 10%, $teeth_main, $teeth_dark)
 }
 
+// ----------
+
+// -----------
+
+// Marketing Tools
+
+.skill__mk__wix {
+    rotate: 2.0deg;
+    @include choose_progress(mk_wix, 60%, $blushing_main, $blushing_dark)
+}
+
+.skill__mk__fb {
+    rotate: -1.3deg;
+    @include choose_progress(mk_fb, 40%, $teeth_main, $teeth_dark)
+}
+
+.skill__mk__googleAds {
+    rotate: 1.6deg;
+    @include choose_progress(mk_googleAds, 40%, $salty_main, $salty_dark)
+}
+
+.skill__mk__fb {
+    rotate: -0.9deg;
+    @include choose_progress(mk_fb, 20%, $popel_main, $popel_dark)
+}
+
+// ----------
+
+// ----------
+
+// CMS
+
+// wix
+.skill__cms__wix {
+    rotate: -1.9deg;
+    @include choose_progress(cms_wix, 80%, $blushing_main, $blushing_dark)
+}
+
+.skill__cms__ionos {
+    rotate: 1.4deg;
+    @include choose_progress(cms_ionos, 60%, $teeth_main, $teeth_dark)
+}
+
+.skill__cms__wordpress {
+    rotate: 0.9deg;
+    @include choose_progress(cms_wordpress, 40%, $salty_main, $salty_dark)
+}
+
+.skill__cms__presta {
+    rotate: 1.6deg;
+    @include choose_progress(cms_presta, 20%, $popel_main, $popel_dark)
+}
+
+.skill__cms__magento {
+    rotate: -2.1deg;
+    @include choose_progress(cms_magento, 20%, $blushing_main, $blushing_dark)
+}
+
+.skill__cms__joomla {
+    rotate: 1.2deg;
+    @include choose_progress(cms_joomla, 10%, $teeth_main, $teeth_dark)
+}
 
 
 // ================
