@@ -1328,6 +1328,22 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 .skills {
   margin: auto;
 }
+.skills:nth-of-type(6) {
+  rotate: -0.9deg;
+  background-color: #71DE75;
+  color: #fffffa;
+}
+.skills:nth-of-type(6) > p {
+  color: #fffffa;
+}
+.skills:nth-of-type(5) {
+  rotate: 0.8deg;
+  background-color: #479AE6;
+  color: #fffffa;
+}
+.skills:nth-of-type(5) > p {
+  color: #fffffa;
+}
 .skills:nth-of-type(1) {
   rotate: 1.2deg;
   background-color: #479AE6;
@@ -1361,12 +1377,12 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   color: #fffffa;
 }
 
-> .skills__part-two:nth-child(1) {
+.skills__part-two:nth-child(1) {
   rotate: -2deg;
   background-color: #CE4C8A;
   color: #fffffa;
 }
-> .skills__part-two:nth-child(1) > p {
+.skills__part-two:nth-child(1) > p {
   color: #fffffa;
 }
 
