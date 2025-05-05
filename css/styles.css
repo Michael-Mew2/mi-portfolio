@@ -2664,23 +2664,43 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   } /* Ziel */
 }
 
+.skill__cms__shopware {
+  rotate: 1.4deg;
+}
+.skill__cms__shopware .progress-moved .progress__bar {
+  width: 20%;
+  background-color: #F6D339;
+  animation-name: cms_magento;
+  animation-duration: 6s;
+}
+@keyframes cms_magento {
+  0% {
+    width: 5%;
+    background-color: #CAAE2F;
+  }
+  100% {
+    width: 20%;
+    background-color: #F6D339;
+  } /* Ziel */
+}
+
 .skill__cms__joomla {
-  rotate: 1.2deg;
+  rotate: -1.7deg;
 }
 .skill__cms__joomla .progress-moved .progress__bar {
   width: 10%;
-  background-color: #F6D339;
+  background-color: #479AE6;
   animation-name: cms_joomla;
   animation-duration: 6s;
 }
 @keyframes cms_joomla {
   0% {
     width: 5%;
-    background-color: #CAAE2F;
+    background-color: #2F6699;
   }
   100% {
     width: 10%;
-    background-color: #F6D339;
+    background-color: #479AE6;
   } /* Ziel */
 }
 

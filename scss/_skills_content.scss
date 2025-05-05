@@ -467,7 +467,7 @@
 }
 
 .skill__cms__wordpress {
-    rotate: 0.9deg;
+    rotate: 1.1deg;
     @include choose_progress(cms_wordpress, 40%, $salty_main, $salty_dark)
 }
 
@@ -481,9 +481,14 @@
     @include choose_progress(cms_magento, 20%, $blushing_main, $blushing_dark)
 }
 
+.skill__cms__shopware {
+    rotate: 1.4deg;
+    @include choose_progress(cms_magento, 20%, $teeth_main, $teeth_dark)
+}
+
 .skill__cms__joomla {
-    rotate: 1.2deg;
-    @include choose_progress(cms_joomla, 10%, $teeth_main, $teeth_dark)
+    rotate: -1.7deg;
+    @include choose_progress(cms_joomla, 10%, $salty_main, $salty_dark)
 }
 
 
