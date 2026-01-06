@@ -2128,7 +2128,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   rotate: 0.3deg;
 }
 .skill__lan__eng .progress-moved .progress__bar {
-  width: 66.67%;
+  width: 83.33%;
   background-color: #F6D339;
   animation-name: lan_eng;
   animation-duration: 6s;
@@ -2139,7 +2139,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
     background-color: #CAAE2F;
   }
   100% {
-    width: 66.67%;
+    width: 83.33%;
     background-color: #F6D339;
   } /* Ziel */
 }
@@ -2544,10 +2544,10 @@ footer .footer__bottom .footer__bottom__left p a:hover {
   } /* Ziel */
 }
 
-.skill__mk__fb {
+.skill__mk__googleAnalytics {
   rotate: -0.9deg;
 }
-.skill__mk__fb .progress-moved .progress__bar {
+.skill__mk__googleAnalytics .progress-moved .progress__bar {
   width: 20%;
   background-color: #71DE75;
   animation-name: mk_fb;
@@ -2605,7 +2605,7 @@ footer .footer__bottom .footer__bottom__left p a:hover {
 }
 
 .skill__cms__wordpress {
-  rotate: 0.9deg;
+  rotate: 1.1deg;
 }
 .skill__cms__wordpress .progress-moved .progress__bar {
   width: 40%;

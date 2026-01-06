@@ -308,7 +308,7 @@
 // English
 .skill__lan__eng {
     rotate: 0.3deg;
-    @include choose_progress (lan_eng, 66.67%, $teeth_main, $teeth_dark)
+    @include choose_progress (lan_eng, 83.33%, $teeth_main, $teeth_dark)
 }
 
 // Spanish
@@ -444,7 +444,7 @@
     @include choose_progress(mk_googleAds, 40%, $salty_main, $salty_dark)
 }
 
-.skill__mk__fb {
+.skill__mk__googleAnalytics {
     rotate: -0.9deg;
     @include choose_progress(mk_fb, 20%, $popel_main, $popel_dark)
 }
